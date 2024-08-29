@@ -4,7 +4,7 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Error from './routes/Error/index.tsx'
 import Login from './routes/Login/index.tsx'
-import RecuperarSenha from './routes/RecuperarSenha/index.tsx'
+import RecuperarSenha from './routes/EsqueciSenha/index.tsx'
 
 const routes = createBrowserRouter([
   {path:"/", element:<App/>,errorElement:<Error/>,children:

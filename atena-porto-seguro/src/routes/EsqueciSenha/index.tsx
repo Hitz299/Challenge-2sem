@@ -1,6 +1,6 @@
 
 
-export default function RecuperarSenha() {
+export default function EsqueciSenha() {
     
     document.title = "Recuperar Senha";
 
