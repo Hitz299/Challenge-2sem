@@ -92,3 +92,16 @@ export const StyleInfoVeiculo = styled.div `
     height: 6vh;
     font-size: 2vw;
 `;
+
+export const StyleLocalizar = styled.div `
+    background-image: url(../imgs/teste_maps.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    align-content: end;
+    position: fixed;
+    flex-wrap: wrap;
+    opacity: 0.9;
+`;
