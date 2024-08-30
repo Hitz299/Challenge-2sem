@@ -18,3 +18,60 @@ export const StyleConta = styled.div`
     text-align: center;
     height: 52vh;
     `;
+
+export const StyleInput = styled.input`
+
+    
+    height: 3.6em;
+    border: none;
+    text-align: center;
+    justify-items: center;
+    padding: 0.6em 1.2em;
+    font-size: 1.6em;
+    border-radius: 32px;
+    background-color: #cececea1;
+    margin-top: 1vh;width: 20vw !important;
+    `;
+
+export const StyleButtonConta = styled.button`
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline-start: 20vw;
+    margin-right: 24vw;       
+`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

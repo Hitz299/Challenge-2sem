@@ -14,7 +14,6 @@ import MinhaConta from './routes/MinhaConta/index.tsx'
 import ChatBot from './routes/ChatBot/index.tsx'
 import MeusVeiculos from './routes/MeusVeiculos/index.tsx'
 import Integrantes from './routes/Integrantes/index.tsx'
-import Loading from './components/Loading/Loading.tsx'
 
 
 const routes = createBrowserRouter([
