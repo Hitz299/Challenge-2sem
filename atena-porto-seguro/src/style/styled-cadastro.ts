@@ -30,3 +30,21 @@ export const StyleIntegrantesInfo = styled.div`
     justify-items: center;
 
 `;
+
+export const StyleRepositorioContainer = styled.div`
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border: inset 0.15vw rgb(153, 0, 255);
+    margin-bottom: 6vh;
+    width: 28vw;
+`;
+
+export const StyleRodapeIntegrantes = styled.footer`
+    margin-top: 4vh;
+    font-size: 100%;
+`;
