@@ -1,4 +1,5 @@
 import CabecalhoAzul from "../../components/CabecalhoAzul/CabecalhoAzul";
+import { StyleGeral } from "../../style/styledGeral";
 
 
 export default function Login() {
@@ -7,6 +8,7 @@ export default function Login() {
 
   return (
     <>
+    
      <CabecalhoAzul/>
     </>
   )

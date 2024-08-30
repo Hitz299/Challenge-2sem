@@ -7,4 +7,3 @@ export const StyleCabecalhoAzul = styled.header`
   justify-content: center;
   position: static;
 `;
-
