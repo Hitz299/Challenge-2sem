@@ -59,3 +59,36 @@ export const StyleVeiculosContainer = styled.div `
     column-gap: 1vw;
     row-gap: 5vw;         
 `; 
+
+export const StyleNomeVeiculo = styled.div `
+    display: block;
+    text-align: center;
+    align-content: center;
+    font-size: 160%;
+    font-weight: bold;
+    background-color: #3da3d0;
+    border-radius: 32px;
+    width: 20vw;
+    height: 6vh;
+`;
+
+export const StyleInfoVeiculo = styled.div `
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    justify-content: center;
+    align-items: center;
+  `;
+  
+  export const StyleItemVeiculo = styled.div ` 
+    background-color: #3da3d0;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 32px;
+    width: 12vw;
+    height: 6vh;
+    font-size: 2vw;
+`;
