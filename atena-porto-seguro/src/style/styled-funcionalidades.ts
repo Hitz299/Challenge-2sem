@@ -39,3 +39,23 @@ padding: 0.1em;
 margin-bottom: 5vh;
 color: #ffffff;
 `;
+
+export const StyleMeusVeiculosContainer = styled.div `
+    display: block;
+    background-color: #d4d4d4;
+    padding-top: 3vh;
+    height: 120vh;
+    width: 100vw;
+`;
+
+export const StyleVeiculosContainer = styled.div `
+    margin-top: 6vh;
+    display: grid;
+    height: 62vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh;
+    justify-items: center;
+    align-items: center;
+    column-gap: 1vw;
+    row-gap: 5vw;         
+`; 
