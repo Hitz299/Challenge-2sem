@@ -1,4 +1,3 @@
-import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
@@ -14,6 +13,7 @@ import MinhaConta from './routes/MinhaConta/index.tsx'
 import ChatBot from './routes/ChatBot/index.tsx'
 import MeusVeiculos from './routes/MeusVeiculos/index.tsx'
 import Integrantes from './routes/Integrantes/index.tsx'
+import { StrictMode } from 'react'
 
 
 const routes = createBrowserRouter([
@@ -43,5 +43,5 @@ const routes = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
       <RouterProvider router={routes}/>
-  </StrictMode>,
+  </StrictMode>
 )
