@@ -136,6 +136,13 @@ export const StyleMedia2 = styled.media`
     }
 `;
 
+export const StyleMedia3 = styled.media`
+    @media screen and (max-width: 761px) {
+        button {
+            margin-left: 20vw;
+        }
+    }
+`;
 
 
 
