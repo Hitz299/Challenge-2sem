@@ -48,3 +48,39 @@ export const StyleRodapeIntegrantes = styled.footer`
     margin-top: 4vh;
     font-size: 100%;
 `;
+
+export const StyleMedia1 = styled.media`
+    @media screen and (max-width: 761px) {
+        #repositorio-container {
+            font-size: 1vw;
+
+            img {
+                width: 3vw;
+            }
+        }
+    }
+`;
+
+export const StyleMedia2 = styled.media`
+    @media screen and (max-width: 1440px) {
+        #repositorio-container {
+            font-size: 1.5vw;
+
+            img {
+                width: 4vw;
+            }
+        }
+    }
+`;
+
+export const StyleMedia3 = styled.media`
+    @media screen and (max-width: 4400px) {
+        #repositorio-container {
+            font-size: 2vw;
+
+            img {
+                width: 5vw;
+            }
+        }
+    }
+`;
