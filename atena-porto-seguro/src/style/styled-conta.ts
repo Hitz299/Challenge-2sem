@@ -43,6 +43,25 @@ export const StyleButtonConta = styled.button`
     margin-right: 24vw;       
 `;
 
+export const StyleCabecalhoVerde = styled.header`
+
+    display: flex;
+    height: 6rem;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    background-color: #68ee86;
+    background-image: url(../imgs/logo-portoseguro.webp);
+    background-size: 22rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 5vw;
+    color: #3da3d0;
+    font-size: 2vw;
+`;
+
+
 
 
 
