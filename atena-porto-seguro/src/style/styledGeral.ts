@@ -9,6 +9,10 @@ export const StyleGeral = createGlobalStyle`
   box-sizing: border-box;
   }
 `
+export const StyleLink = styled.a`
+text-decoration: none;
+    color: aliceblue;
+`
 
 export const StyleButton = styled.button`
   display: block;
