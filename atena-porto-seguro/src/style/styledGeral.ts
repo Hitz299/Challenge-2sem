@@ -35,4 +35,15 @@ export const StyleButton = styled.button`
     background-color: #68ee86;
   }
 
+  @media screen and (max-height: 741px) {
+     height: 40px;
+  }
+
+  @media screen and (max-width: 761px) {
+    height: 30px;
+  }
+
+  @media screen and (max-width: 981px) {
+    height: 45px;
+  }
 `

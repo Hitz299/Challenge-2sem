@@ -134,3 +134,18 @@ export const StyleServico3 = styled.div`
         }
     }
 `;
+
+export const StyleImgFundoIncial = styled.img`
+@media screen and (max-width: 4400px) {
+width: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    width: 35px;
+}
+
+`
