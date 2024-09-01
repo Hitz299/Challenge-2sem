@@ -106,31 +106,13 @@ export const StyleLocalizar = styled.div `
     opacity: 0.9;
 `;
 
-export const StyleMedia1 = styled.media`
-    @media screen and (max-width: 4400px) {
-        .cabecalho-verde {
-            display: flex;
-            height: 10vh;
-            flex-direction: row;
-            justify-content: start;
-            align-items: center;
-            position: relative;
-            background-color: #68ee86;
-            background-image: url(../imgs/logo-portoseguro.webp);
-            background-size: 22rem;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding-left: 5vw;
-            color: #3da3d0;
-            font-size: 1vw;
-        }
 
-        input {
-            width: 30vw;
-        }
-    }
+  
 
-`;
+       
+    
+
+
 
 export const StyleMedia2 = styled.media`
     @media screen and (max-width: 1440px) {

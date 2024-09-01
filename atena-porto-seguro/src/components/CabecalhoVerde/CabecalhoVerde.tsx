@@ -4,7 +4,7 @@ export default function CabecalhoVerde() {
     return (
         <>
         <StyleCabecalhoVerde>
-            <header></header>
+            <h1>Titulo</h1>
         </StyleCabecalhoVerde>
         </>
     )

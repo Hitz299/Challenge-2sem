@@ -49,6 +49,24 @@ export const StyleCabecalhoVerde = styled.header`
         margin-left: 5vw;
         border: 0.4vw solid #3da3d0;
     }
+
+      @media screen and (max-width: 4400px) {
+       
+            display: flex;
+            height: 10vh;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            background-color: #68ee86;
+            background-image: url(../imgs/logo-portoseguro.webp);
+            background-size: 22rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 5vw;
+            color: #3da3d0;
+            font-size: 1vw;
+        }
 `;
 
 export const StyleServico1 = styled.div`

@@ -1,3 +1,4 @@
+import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
 
 
 export default function AdicionarVeiculos() {
@@ -6,7 +7,7 @@ export default function AdicionarVeiculos() {
    
   return (
     <>
-    <div>index</div>
+      <CabecalhoVerde/>
     </>
   )
 }
