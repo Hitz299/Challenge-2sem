@@ -134,33 +134,3 @@ export const StyleServico3 = styled.div`
         }
     }
 `;
-
-export const StyleMedia1 = styled.media`
-    @media screen and (max-width: 4400px) {
-        #fundo-inicial {
-            img {
-            width: 50px;
-            }
-        }
-    }
-`;
-
-export const StyleMedia2 = styled.media`
-    @media screen and (max-width: 1440px) {
-        #fundo-inicial {
-            img {
-            width: 40px;
-            }
-        }
-    }
-`;
-
-export const StyleMedia3 = styled.media`
-    @media screen and (max-width: 767px) {
-        #fundo-inicial {
-            img {
-            width: 35px;
-             }
-        }
-    }
-`;
