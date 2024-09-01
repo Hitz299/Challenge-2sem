@@ -49,6 +49,26 @@ export const StyleRodapeIntegrantes = styled.footer`
     font-size: 100%;
 `;
 
+export const StyleButtonRedefinir = styled.button`
+    margin-top: 20vh;  
+`;
+
+export const StyleButtonEsqueci = styled.button`
+    margin-top: 12vh;    
+`;
+
+export const StyleParagrafoCadastro = styled.p`
+    margin-top: 16vh;
+`;
+
+export const StyleH2 = styled.h2`
+    margin-top: 10vh;
+`;
+
+export const StyleInformativo = styled.p`
+    margin-bottom: 8vh;
+`;
+
 export const StyleMedia1 = styled.media`
     @media screen and (max-width: 761px) {
         #repositorio-container {
