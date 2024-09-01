@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 
 export const StyleCabecalhoAzul = styled.header`
@@ -42,6 +43,33 @@ export const StyleRepositorioContainer = styled.div`
     border: inset 0.15vw rgb(153, 0, 255);
     margin-bottom: 6vh;
     width: 28vw;
+
+    @media screen and (max-width: 761px) {
+ 
+    font-size: 1vw;
+
+    img {
+      width: 3vw;
+    }
+  }
+
+    @media screen and (max-width: 1440px) {
+
+    font-size: 1.5vw;
+
+    img {
+      width: 4vw;
+    }
+  }
+
+    @media screen and (max-width: 4400px) {
+    font-size: 2vw;
+
+    img {
+      width: 5vw;
+    }
+  }
+
 `;
 
 export const StyleRodapeIntegrantes = styled.footer`

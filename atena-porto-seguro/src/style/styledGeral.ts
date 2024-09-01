@@ -30,11 +30,13 @@ export const StyleButton = styled.button`
     color: aliceblue;
   }
 
+
   &:hover {
     transition: 0.8s ease-in;
     background-color: #68ee86;
   }
 
+  
   @media screen and (max-height: 741px) {
      height: 40px;
   }
@@ -47,3 +49,27 @@ export const StyleButton = styled.button`
     height: 45px;
   }
 `
+
+
+  export const StyleRodapeLink  = styled.ul`
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    text-align: center;
+
+    @media screen and (max-width: 4400px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+      @media screen and (max-width: 1920px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4vh;
+    }
+
+` 
+
+

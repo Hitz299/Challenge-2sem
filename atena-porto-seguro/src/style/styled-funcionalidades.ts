@@ -94,7 +94,7 @@ export const StyleInfoVeiculo = styled.div `
 `;
 
 export const StyleLocalizar = styled.div `
-    background-image: url(../imgs/teste_maps.png);
+    background-image: url("/public/teste_maps.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
