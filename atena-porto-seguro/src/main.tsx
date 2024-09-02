@@ -17,7 +17,7 @@ import RedefinirSenha from './routes/RedefinirSenha/index.tsx'
 
 const routes = createBrowserRouter([
   {
-    path: "/", element: <App />, errorElement: <Error />, children:
+    path: "/", element: <App/>, errorElement: <Error />, children:
       [
         {
           path: "/",
