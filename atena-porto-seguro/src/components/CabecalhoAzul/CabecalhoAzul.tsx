@@ -1,11 +1,16 @@
 
 import { StyleCabecalhoAzul} from '../../style/styled-cadastro'
 
-export default function CabecalhoAzul() {
+interface CabecalhoAzulProps
+{
+  titulo: string
+}
+
+export default function CabecalhoAzul({titulo}:CabecalhoAzulProps) {
   return (
     <>
     <StyleCabecalhoAzul>
-      <h1>Login</h1>
+      <h1>{titulo}</h1>
     </StyleCabecalhoAzul>
   </>
   )

@@ -14,6 +14,16 @@ text-decoration: none;
     color: aliceblue;
 `
 
+export const  StyleContainerEntrada = styled.div`
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1vw;
+
+`;
+
 export const StyleButton = styled.button`
   display: block;
   padding: 0.4vw;

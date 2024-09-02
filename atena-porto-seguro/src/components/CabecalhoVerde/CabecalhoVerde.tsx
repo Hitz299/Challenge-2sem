@@ -1,10 +1,15 @@
 import { StyleCabecalhoVerde } from "../../style/style-tela-inicial";
 
-export default function CabecalhoVerde() {
+interface CabecalhoVerdeProps
+{
+  titulo: string
+}
+
+export default function CabecalhoVerde({titulo}: CabecalhoVerdeProps) {
     return (
         <>
         <StyleCabecalhoVerde>
-            <h1>Titulo</h1>
+            <h1>{titulo}</h1>
         </StyleCabecalhoVerde>
         </>
     )

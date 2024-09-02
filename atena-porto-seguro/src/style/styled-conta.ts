@@ -19,10 +19,9 @@ export const StyleConta = styled.div`
     height: 52vh;
     `;
 
-export const StyleInput = styled.input`
+export const StyledInput = styled.input`
 
-    
-    height: 3.6em;
+    width: 100vw !important;
     border: none;
     text-align: center;
     justify-items: center;
@@ -31,6 +30,12 @@ export const StyleInput = styled.input`
     border-radius: 32px;
     background-color: #cececea1;
     margin-top: 1vh;width: 20vw !important;
+
+    @media screen and (max-width: 761px) {
+   
+      width: 50vw;
+    
+  }
     `;
 
 export const StyleButtonConta = styled.button`
