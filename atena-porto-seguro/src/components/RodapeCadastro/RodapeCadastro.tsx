@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { StyleRodapeLink } from "../../style/styledGeral";
+import { StyledLi, StyledLink, StyleRodapeLink } from "../../style/styledGeral";
 
 interface RodapeCadastroProps {
     link1: string,
@@ -14,8 +13,8 @@ export default function RodapeCadastro({link1, link2, nomeLink1, nomeLink2}: Rod
     <>
         <nav>
             <StyleRodapeLink>
-                <li><Link to={link1}>{nomeLink1} </Link></li>
-                <li><Link to={link2}>{nomeLink2}</Link></li>
+                <StyledLi><StyledLink to={link1}>{nomeLink1} </StyledLink></StyledLi>
+                <StyledLi><StyledLink to={link2}>{nomeLink2}</StyledLink></StyledLi>
 
             </StyleRodapeLink>
         </nav>    

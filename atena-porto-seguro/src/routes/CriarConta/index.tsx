@@ -1,7 +1,7 @@
 import BgGradient from "../../components/BgGradient/BgGradient";
+import Button from "../../components/Button/Button";
 import CabecalhoAzul from "../../components/CabecalhoAzul/CabecalhoAzul";
 import FormularioCriarConta from "../../components/FormularioCriarConta/FormularioCriarConta";
-import RodapeCadastro from "../../components/RodapeCadastro/RodapeCadastro";
 
 
 export default function CriarConta() {
@@ -15,8 +15,7 @@ export default function CriarConta() {
 
         
         <FormularioCriarConta/>
-       <RodapeCadastro link1="./recuperar/senha" link2="./criar/conta"
-       nomeLink1="Esqueci minha senha" nomeLink2="Criar Conta" />
+        <Button titulo="Criar"/>
       </BgGradient>
     </>
   )

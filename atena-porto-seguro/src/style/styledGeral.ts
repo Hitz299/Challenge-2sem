@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom";
 import {styled, createGlobalStyle } from "styled-components"
 
 
@@ -9,6 +11,20 @@ export const StyleGeral = createGlobalStyle`
   box-sizing: border-box;
   }
 `
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  font-size: 160%;
+
+  &:hover{
+    color: aliceblue;
+    font-size: 200%;
+    transition: all 0.15s ease-in;
+  }
+`;
+
+
 export const StyleLink = styled.a`
 text-decoration: none;
     color: aliceblue;
@@ -18,11 +34,31 @@ export const  StyleContainerEntrada = styled.div`
   
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 1vw;
+  text-align: start;
+  align-items: start;
 
+
+
+  label{
+    margin-left: 5%;
+    margin-top: 5vh;
+
+   @media screen and (max-height: 741px) {
+     font-size: 20px;
+  }
+
+  @media screen and (max-height: 4400px) {
+     font-size: 22px;
+  }
+  }
+
+  
 `;
+
+export const StyledLi= styled.li`
+  list-style-type: none; 
+`;
+
 
 export const StyleButton = styled.button`
   display: block;
@@ -33,7 +69,7 @@ export const StyleButton = styled.button`
   border-color: #fdfdfdec;
   border-style: solid;
   cursor: pointer;
-  margin: auto;
+  margin: 8vh auto;
   font-size: 1.6vw;
   width: 10vw;
   justify-content: center;
@@ -71,6 +107,8 @@ export const StyleButton = styled.button`
 
     flex-wrap: wrap;
     text-align: center;
+
+    
 
     @media screen and (max-width: 4400px) {
       flex-direction: row;

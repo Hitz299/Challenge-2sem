@@ -17,6 +17,7 @@ export const StyleGradient = styled.div `
     background: linear-gradient(to bottom, #68ee86, #3da3d0);
     flex-wrap: wrap;
     align-content: center;
+    justify-content: start;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
