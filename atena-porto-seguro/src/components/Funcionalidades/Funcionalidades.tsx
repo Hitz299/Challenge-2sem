@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { StyleServico } from "../../style/style-tela-inicial";
 
 interface FuncionalidadesProps {
 
@@ -8,8 +9,17 @@ interface FuncionalidadesProps {
 }
 
 export default function Funcionalidades({ cor, nome, icone }: FuncionalidadesProps) {
+
+
     return (
         <>
+
+            <StyleServico >
+
+
+
+            </StyleServico>
+
 
         </>
     )
