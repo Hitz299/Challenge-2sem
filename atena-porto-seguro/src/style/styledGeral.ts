@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import {styled, createGlobalStyle } from "styled-components"
+import { createGlobalStyle, styled } from "styled-components";
 
 
 export const StyleGeral = createGlobalStyle`
@@ -15,24 +15,23 @@ export const StyleGeral = createGlobalStyle`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
-  font-size: 160%;
+  font-size: 1.2em;
+  position: absolute;
+  
+  
 
   &:hover{
+    font-size: 1.6em;
+    transition: font-size 0.1s ease-in;
     color: aliceblue;
-    font-size: 200%;
-    transition: all 0.15s ease-in;
   }
 `;
 
 
-export const StyleLink = styled.a`
-text-decoration: none;
-    color: aliceblue;
-`
-
-export const  StyleContainerEntrada = styled.div`
+export const StyleContainerEntrada = styled.div`
   
   display: flex;
+  position: relative;
   flex-direction: column;
   text-align: start;
   align-items: start;
@@ -55,7 +54,7 @@ export const  StyleContainerEntrada = styled.div`
   
 `;
 
-export const StyledLi= styled.li`
+export const StyledLi = styled.li`
   list-style-type: none; 
 `;
 
@@ -75,10 +74,6 @@ export const StyleButton = styled.button`
   justify-content: center;
   align-items: center;
 
-  a {
-    text-decoration: none;
-    color: aliceblue;
-  }
 
 
   &:hover {
@@ -89,39 +84,53 @@ export const StyleButton = styled.button`
   
   @media screen and (max-height: 741px) {
      height: 40px;
+     width: 100px;
+     font-size: 1.5em;
   }
 
   @media screen and (max-width: 761px) {
     height: 30px;
+    width: 85px;
+    font-size: 1.4em;
   }
 
   @media screen and (max-width: 981px) {
     height: 45px;
+    width: 110px;
   }
 `
 
 
-  export const StyleRodapeLink  = styled.ul`
+export const StyleRodapeLink = styled.ul`
     display: flex;
     flex-direction: row;
 
     flex-wrap: wrap;
     text-align: center;
+    gap: 3vh;
+    justify-content: space-around;
 
-    
 
-    @media screen and (max-width: 4400px) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
 
-      @media screen and (max-width: 1920px) {
+      @media screen and (max-width: 567px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 4vh;
+      gap: 8vh !important;
     }
 
-` 
+    @media screen and (max-width: 1200px) {
+      row-gap: 50vw;
+    }
+
+    
+
+    @media screen and (max-width: 876px) {
+      justify-content: center;
+      align-items: center;
+      gap: 40vw;
+    }
+
+`
 
 

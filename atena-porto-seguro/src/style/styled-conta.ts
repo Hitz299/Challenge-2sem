@@ -21,7 +21,7 @@ export const StyleConta = styled.div`
 
 export const StyledInput = styled.input`
 
-    width: 100vw !important;
+    width: 40vw;
     border: none;
     text-align: center;
     justify-items: center;
@@ -29,11 +29,11 @@ export const StyledInput = styled.input`
     font-size: 1.6em;
     border-radius: 32px;
     background-color: #cececea1;
-    margin-top: 1vh;width: 20vw !important;
+    margin-top: 1vh;
 
-    @media screen and (max-width: 761px) {
+    @media screen and (max-width: 961px) {
    
-      width: 50vw;
+      width: 80vw !important;
     
   }
     `;
