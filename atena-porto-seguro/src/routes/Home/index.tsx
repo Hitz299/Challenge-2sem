@@ -1,9 +1,13 @@
+import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
 
 export default function Home() {
 
-    document.title = "Home";
+  document.title = "Home";
 
   return (
-    <div>index</div>
+    <>
+      <CabecalhoVerde titulo="Página inicial" />
+
+    </>
   )
 }
