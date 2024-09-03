@@ -69,7 +69,7 @@ export const StyleCabecalhoVerde = styled.header`
         }
 `;
 
-export const StyleServico1 = styled.div`
+export const StyleServico = styled.div<{ cor: string }>`
     width: 100%;
     padding: 1.75vh;
     display: flex;
@@ -88,49 +88,7 @@ export const StyleServico1 = styled.div`
         position: relative;
         &:hover {
             transition: 1.1s ease-in;
-            background-color: #68ee86;
-        }
-    }
-`;
-
-export const StyleServico2 = styled.div`
-    padding: 1.25vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: 10vw;
-    align-items: center;
-    background-color: #68ee86;
-    height: 10vh;
-    width: 80vw;
-    color: #ffffff;
-    font-size: 3vw;
-    img {
-        position: relative;
-        &:hover {
-            transition: 1.1s ease-in;
-            background-color: #3da3d0;
-        }
-  }
-`;
-
-export const StyleServico3 = styled.div`
-    padding: 1.75vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: 10vw;
-    background-color: #3da3d0;
-    height: 10vh;
-    width: 80vw;
-    color: #ffffff;
-    font-size: 3vw;
-        align-items: center;
-    img {
-        position: relative;
-        &:hover {
-            transition: 1.1s ease-in;
-            background-color: #68ee86;
+            background-color: ${(props) => props.cor};;
         }
     }
 `;

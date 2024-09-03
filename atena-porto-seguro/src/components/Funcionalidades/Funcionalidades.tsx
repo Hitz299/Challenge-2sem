@@ -3,7 +3,7 @@ import { StyleServico } from "../../style/style-tela-inicial";
 
 interface FuncionalidadesProps {
 
-    cor: ReactNode;
+    cor: string;
     nome: string;
     icone: ReactNode;
 }
@@ -14,7 +14,7 @@ export default function Funcionalidades({ cor, nome, icone }: FuncionalidadesPro
     return (
         <>
 
-            <StyleServico >
+            <StyleServico color={cor}>
 
 
 
