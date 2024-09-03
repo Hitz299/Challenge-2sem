@@ -69,7 +69,7 @@ export const StyleCabecalhoVerde = styled.header`
         }
 `;
 
-export const StyleServico = styled.div<{ cor: string }>`
+export const StyleServico = styled.div<{ color: string }>`
     width: 100%;
     padding: 1.75vh;
     display: flex;
@@ -77,18 +77,16 @@ export const StyleServico = styled.div<{ cor: string }>`
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    padding-inline: 10vw;
     background-color: #3da3d0;
     height: 10vh;
-    width: 80vw;
     color: #ffffff;
     font-size: 3vw;
 
     img {
         position: relative;
-        &:hover {
             transition: 1.1s ease-in;
-            background-color: ${(props) => props.cor};;
+        &:hover {
+            background-color: ${(props) => props.color};;
         }
     }
 `;
