@@ -75,24 +75,49 @@ interface StyleServicoProps {
 }
 
 export const StyleServico = styled.div<StyleServicoProps>`
-    width: 100%;
-    padding: 1.75vh;
+
+    padding-inline: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     background-color:${(props) => props.color};
     height: 10vh;
     color: #ffffff;
-    font-size: 3vw;
-
-    img {
-        position: relative;
-            transition: 1.1s ease-in;
-        &:hover {
-            background-color: ${(props) => props.color};
+    margin-top: 2vh;
+  
+    &:hover {
+            background-color: #000000;
+            transition: all 0.2s ease-in;
         }
+    
+
+    @media screen and (max-width: 4400px) {
+            width: 1300px;
+            height: 120px;
+            font-size: 50px;
+            gap: 1000px;
+    }
+
+     @media screen and (max-width: 1440px) {
+            width: 700px;
+            height: 100px;
+             font-size: 30px;
+            gap: 560px;
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 400px;
+            height: 80px;
+             font-size: 20px;
+             gap: 300px;
+    }
+
+        @media screen and (max-width: 564px) {
+            width: 320px;
+            height: 80px;
+            font-size: 14px;
+            gap: 250px;
     }
 `;
 
