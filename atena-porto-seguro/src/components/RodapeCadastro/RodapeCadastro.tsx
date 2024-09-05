@@ -1,9 +1,10 @@
+
 import { StyledLi, StyledLink, StyleRodapeLink } from "../../style/styledGeral";
 
 interface RodapeCadastroProps {
-    link1: string,
-    link2: string 
-    nomeLink1: string
+    link1: string
+    link2: string
+    nomeLink1: string,
     nomeLink2: string
     }
 

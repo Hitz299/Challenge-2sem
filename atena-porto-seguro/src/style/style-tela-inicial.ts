@@ -12,17 +12,17 @@ export const StyleServicosContainer = styled.div`
 
 export const StyleFundoInicial = styled.div`
     display: flex;
-    background-image: url(../imgs/background-1280x985.jpg);
+    background-image: url(/public/background-1280x985.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
 `;
 
 export const StyleIconeServico = styled.div`
-     background-color: #ffffff;
+     background-color: #000000;
      border-radius: 32px;
 `;
 
@@ -69,7 +69,12 @@ export const StyleCabecalhoVerde = styled.header`
         }
 `;
 
-export const StyleServico = styled.div<{ color: string }>`
+
+interface StyleServicoProps {
+    color: string; // Define o tipo da prop color
+}
+
+export const StyleServico = styled.div<StyleServicoProps>`
     width: 100%;
     padding: 1.75vh;
     display: flex;
@@ -77,7 +82,7 @@ export const StyleServico = styled.div<{ color: string }>`
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    background-color: #3da3d0;
+    background-color:${(props) => props.color};
     height: 10vh;
     color: #ffffff;
     font-size: 3vw;
@@ -86,7 +91,7 @@ export const StyleServico = styled.div<{ color: string }>`
         position: relative;
             transition: 1.1s ease-in;
         &:hover {
-            background-color: ${(props) => props.color};;
+            background-color: ${(props) => props.color};
         }
     }
 `;

@@ -1,32 +1,39 @@
-import { StyleServico } from "../../style/style-tela-inicial";
-import { Link } from "react-router-dom"
+import React from "react";
+import { StyleIconeServico, StyleServico } from "../../style/style-tela-inicial";
+import { StyledLink } from "../../style/styledGeral";
 
 
 interface FuncionalidadesProps {
 
     cor: string;
     nome: string;
-    icone: string;
+    icone: string | React.ReactNode;
     link: string;
-    altImg: string
 }
 
-export default function Funcionalidades({ cor, nome, icone, link, altImg }: FuncionalidadesProps) {
+export default function Funcionalidades({ cor, nome, icone, link }: FuncionalidadesProps) {
 
 
     return (
         <>
 
             <StyleServico color={cor}>
-                    <p>{nome}</p>
-                <Link to={link}>   </Link>
-                <div>
-                    <img src={icone} alt={altImg} />
-                </div>
+                    <div>
+                        <nav>
+                            <StyledLink to={link}>{nome}</StyledLink>
+                        </nav>
+                    </div>
+                  
+                  <StyleIconeServico>
+                        
+                    <figure>
+                            {icone}
+                    </figure>
+                </StyleIconeServico>
 
             </StyleServico>
 
-
+            
         </>
     )
 }
