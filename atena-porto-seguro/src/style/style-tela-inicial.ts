@@ -1,13 +1,100 @@
 import styled from 'styled-components';
+import { FaCar } from 'react-icons/fa';
+import { GrAdd } from "react-icons/gr";
+import { GrContact } from "react-icons/gr";
+
+export const StylediconeCarro  = styled(FaCar)`
+  
+     @media screen and (max-width: 4400px) {
+            width: 70px;
+            height: 70px;
+            
+    }
+
+     @media screen and (max-width: 1440px) {
+            width: 55px;
+            height: 55px;
+           
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 40px;
+            height: 40px;
+          
+    }
+
+        @media screen and (max-width: 564px) {
+            width: 25px;
+            height: 25px;
+           
+    }
+
+`;
+
+export const StyledIconeAdd  = styled(GrAdd)`
+  
+     @media screen and (max-width: 4400px) {
+            width: 70px;
+            height: 70px;
+    }
+
+     @media screen and (max-width: 1440px) {
+            width: 55px;
+            height: 55px;
+           
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 40px;
+            height: 40px;
+          
+          
+    }
+
+        @media screen and (max-width: 564px) {
+            width: 25px;
+            height: 25px;
+           
+    }
+
+`;
+
+export const StyledIconeContato  = styled(GrContact)`
+  
+     @media screen and (max-width: 4400px) {
+            width: 65px;
+            height: 65px;
+            
+    }
+
+     @media screen and (max-width: 1440px) {
+            width: 45px;
+            height: 45px;
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 35px;
+            height: 35px;
+          
+          
+    }
+
+        @media screen and (max-width: 564px) {
+            width: 20px;
+            height: 20px;
+           
+    }
+
+`;
+
 
 export const StyleServicosContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 10vh;
     margin-top: 3%;
-    img {
-        width: 130%;
-    }
+
+   
 `;
 
 export const StyleFundoInicial = styled.div`
@@ -23,7 +110,33 @@ export const StyleFundoInicial = styled.div`
 
 export const StyleIconeServico = styled.div`
      background-color: #000000;
-     border-radius: 32px;
+     border-radius: 3600px;
+     padding: 0.2em;
+
+     @media screen and (max-width: 4400px) {
+            width: 190px;
+            height: 100px;
+            
+    }
+
+     @media screen and (max-width: 1440px) {
+            width: 90px;
+            height: 70px;
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 40px;
+            height: 40px;
+          
+          
+    }
+
+        @media screen and (max-width: 564px) {
+            width: 25px;
+            height: 25px;
+           
+    }
+
 `;
 
 export const StyledIconeConta = styled.div`
@@ -120,6 +233,7 @@ export const StyleServico = styled.div<StyleServicoProps>`
             gap: 250px;
     }
 `;
+
 
 export const StyleImgFundoIncial = styled.img`
 @media screen and (max-width: 4400px) {

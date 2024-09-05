@@ -19,9 +19,9 @@ export default function Funcionalidades({ cor, nome, icone, link }: Funcionalida
 
             <StyleServico color={cor}>
                     <div>
-                        <nav>
+                      
                             <StyledLink to={link}>{nome}</StyledLink>
-                        </nav>
+                       
                     </div>
                   
                   <StyleIconeServico>
