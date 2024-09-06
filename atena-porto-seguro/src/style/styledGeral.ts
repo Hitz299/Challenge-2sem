@@ -69,7 +69,7 @@ export const StyleButton = styled.button`
   border-style: solid;
   cursor: pointer;
   margin: 8vh auto;
-  font-size: 1.6vw;
+  font-size: 1.6em;
   width: 10vw;
   justify-content: center;
   align-items: center;
