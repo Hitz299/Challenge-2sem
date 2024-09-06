@@ -59,7 +59,7 @@ export const StyledLi = styled.li`
 `;
 
 
-export const StyleButton = styled.button`
+export const StyledButton = styled.button`
   display: block;
   padding: 0.4vw;
   background-color: #3da3d0;
@@ -69,8 +69,6 @@ export const StyleButton = styled.button`
   border-style: solid;
   cursor: pointer;
   margin: 8vh auto;
-  font-size: 1.6em;
-  width: 10vw;
   justify-content: center;
   align-items: center;
 
@@ -81,22 +79,28 @@ export const StyleButton = styled.button`
     background-color: #68ee86;
   }
 
-  
+  @media screen and (max-height: 4400px) {
+     height: 80px;
+     width: 200px;
+     font-size: 1.5em;
+  }
+
   @media screen and (max-height: 741px) {
      height: 40px;
      width: 100px;
-     font-size: 1.5em;
+     font-size: 0.9em;
   }
 
   @media screen and (max-width: 761px) {
     height: 30px;
     width: 85px;
-    font-size: 1.4em;
+    font-size: 1em;
   }
 
   @media screen and (max-width: 981px) {
     height: 45px;
     width: 110px;
+    font-size: 1em;
   }
 `
 
@@ -133,4 +137,11 @@ export const StyleRodapeLink = styled.ul`
 
 `
 
+export const StyledCentraliza  = styled.div`
 
+display: block;
+position: relative;
+text-align: center;
+align-items: center;
+justify-content: center;
+`;

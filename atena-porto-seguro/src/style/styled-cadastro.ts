@@ -37,7 +37,8 @@ export const StyledIntegrantesTopo = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-justify-items: center;
+gap: 30vw;
+
 h1 {
   margin-top: 8vh;
   font-size: 3vw;

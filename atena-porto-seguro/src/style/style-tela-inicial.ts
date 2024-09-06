@@ -91,10 +91,10 @@ export const StyledIconeContato  = styled(GrContact)`
 export const StyleServicosContainer = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100vw;
     gap: 10vh;
     margin-top: 3%;
 
-   
 `;
 
 export const StyleFundoInicial = styled.div`
@@ -236,16 +236,16 @@ export const StyleServico = styled.div<StyleServicoProps>`
 
 
 export const StyleImgFundoIncial = styled.img`
-@media screen and (max-width: 4400px) {
-width: 50px;
-}
-
-@media screen and (max-width: 1440px) {
-width: 40px;
-}
-
-@media screen and (max-width: 767px) {
-    width: 35px;
+    @media screen and (max-width: 4400px) {
+        width: 50px;
+    }
+    
+    @media screen and (max-width: 1440px) {
+        width: 40px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        width: 35px;
 }
 
 `

@@ -3,6 +3,7 @@ import Button from "../../components/Button/Button";
 import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
 import Funcionalidades from "../../components/Funcionalidades/Funcionalidades";
 import { StyledIconeAdd, StylediconeCarro, StyledIconeContato } from "../../style/style-tela-inicial";
+import { StyledCentraliza } from "../../style/styledGeral";
 
 
 export default function Home() {
@@ -26,8 +27,9 @@ export default function Home() {
         <Funcionalidades nome="Obter Ajuda" link="./chatbot"
           icone={<StyledIconeContato />} cor="#68ee86" />
 
-
-        <Button titulo="Integrantes" />
+        <StyledCentraliza>
+          <Button titulo="Integrantes" />
+      </StyledCentraliza>
       </BgInicial>
     </>
   )

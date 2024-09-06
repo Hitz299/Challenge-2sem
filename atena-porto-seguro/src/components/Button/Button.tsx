@@ -1,4 +1,4 @@
-import { StyleButton } from "../../style/styledGeral";
+import { StyledButton } from "../../style/styledGeral";
 
 interface ButtonProps
 {
@@ -8,9 +8,9 @@ interface ButtonProps
 export default function Button({titulo}:ButtonProps) {
   return (
     <>
-        <StyleButton>
+        <StyledButton>
             {titulo}
-        </StyleButton>
+        </StyledButton>
     </>
   )
 }
