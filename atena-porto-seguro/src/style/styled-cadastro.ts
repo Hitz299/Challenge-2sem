@@ -9,7 +9,7 @@ export const StyleCabecalhoAzul = styled.header`
     position: static;
 `;
 
-export const StyleGradient = styled.div `
+export const StyleGradient = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,13 +25,30 @@ export const StyleGradient = styled.div `
     position: fixed;
 `;
 
-export const StyleIntegrantesInfo = styled.div`
+export const StyledIntegrantesInfo = styled.div`
     margin-top: 6vh;
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
     justify-items: center;
 
 `;
+
+export const StyledIntegrantesTopo = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+justify-items: center;
+h1 {
+  margin-top: 8vh;
+  font-size: 3vw;
+}
+
+img {
+  width: 20vw;
+  margin-top: 8vh;
+}
+
+`
 
 export const StyleRepositorioContainer = styled.div`
     margin: 0 auto;
