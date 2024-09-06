@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { FaCar } from 'react-icons/fa';
 import { GrAdd } from "react-icons/gr";
 import { GrContact } from "react-icons/gr";
+import { Link } from 'react-router-dom';
 
 export const StylediconeCarro  = styled(FaCar)`
   
@@ -73,6 +74,9 @@ export const StyledIconeContato  = styled(GrContact)`
     }
 `;
 
+export const StyledLinkServico = styled(Link)`
+  text-decoration: none;
+`;
 
 export const StyleServicosContainer = styled.div`
     display: flex;
@@ -80,10 +84,9 @@ export const StyleServicosContainer = styled.div`
     justify-content: center;
     text-align: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     gap: 10vh;
-    padding-bottom: 20vh;
-    margin-top: 2.5%;
+    margin-top: 5vh;
 
 `;
 
@@ -99,13 +102,14 @@ export const StyleFundoInicial = styled.div`
 `;
 
 export const StyleIconeServico = styled.div`
-     background-color: #000000;
+    background-color: #000000;
      border-radius: 100%;
      display: block;
      justify-content: center;
      align-items: center;
      text-align: center;
 
+  
 
      @media screen and (max-width: 4400px) { 
             padding: 12px;
@@ -179,8 +183,7 @@ export const StyleCabecalhoVerde = styled.header`
 export const StyledTituloServico = styled.h3`
   color: inherit;
   font-size: 0.9em;
-  position: absolute;
-  
+  margin: 0;
 `;
 
 
@@ -190,14 +193,16 @@ interface StyleServicoProps {
 
 export const StyleServico = styled.div<StyleServicoProps>`
 
-    padding-inline: 100px;
-    display: block;
-    justify-content: center;
-    align-content: center;
-    background-color:${(props) => props.color};
-    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 8vw;
     color: #ffffff;
-    margin-top: 2vh;
+    background-color: ${(props) => props.color};
+    cursor: pointer;
+    border-radius: 0 100px  100px 0; 
+    
     cursor: pointer;
 
     &:hover {
@@ -210,28 +215,27 @@ export const StyleServico = styled.div<StyleServicoProps>`
             width: 1300px;
             height: 120px;
             font-size: 50px;
-            gap: 1000px;
+        
     }
 
      @media screen and (max-width: 1440px) {
             width: 700px;
             height: 100px;
              font-size: 30px;
-            gap: 560px;
+         
     }
 
        @media screen and (max-width: 761px) {
             width: 400px;
             height: 80px;
              font-size: 20px;
-             gap: 300px;
-    }
+          
 
         @media screen and (max-width: 564px) {
             width: 320px;
             height: 80px;
             font-size: 14px;
-            gap: 250px;
+
     }
 `;
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { StyledTituloServico, StyleIconeServico, StyleServico } from "../../style/style-tela-inicial";
-import { StyledLink } from "../../style/styledGeral";
 
 
 interface FuncionalidadesProps {
@@ -17,20 +16,15 @@ export default function Funcionalidades({ cor, nome, icone}: FuncionalidadesProp
         <>
 
             <StyleServico color={cor}>
-                    <div>
-                      
-                            <StyledTituloServico>{nome}</StyledTituloServico>
-                       
-                    </div>
-                  
-                  <StyleIconeServico>
-                        
-                    <figure>
-                            {icone}
-                    </figure>
-                </StyleIconeServico>
-
-            </StyleServico>
+            <StyleIconeServico>
+                <figure>
+                    {icone}
+                </figure>
+            </StyleIconeServico>
+            <div>
+            <StyledTituloServico>{nome}</StyledTituloServico>
+            </div>
+        </StyleServico>
 
             
         </>
