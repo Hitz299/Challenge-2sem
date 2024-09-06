@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleIconeServico, StyleServico } from "../../style/style-tela-inicial";
+import { StyledTituloServico, StyleIconeServico, StyleServico } from "../../style/style-tela-inicial";
 import { StyledLink } from "../../style/styledGeral";
 
 
@@ -8,10 +8,9 @@ interface FuncionalidadesProps {
     cor: string;
     nome: string;
     icone: string | React.ReactNode;
-    link: string;
 }
 
-export default function Funcionalidades({ cor, nome, icone, link }: FuncionalidadesProps) {
+export default function Funcionalidades({ cor, nome, icone}: FuncionalidadesProps) {
 
 
     return (
@@ -20,7 +19,7 @@ export default function Funcionalidades({ cor, nome, icone, link }: Funcionalida
             <StyleServico color={cor}>
                     <div>
                       
-                            <StyledLink to={link}>{nome}</StyledLink>
+                            <StyledTituloServico>{nome}</StyledTituloServico>
                        
                     </div>
                   

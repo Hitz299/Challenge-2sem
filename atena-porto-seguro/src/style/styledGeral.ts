@@ -28,6 +28,8 @@ export const StyledLink = styled(Link)`
 `;
 
 
+
+
 export const StyleContainerEntrada = styled.div`
   
   display: flex;

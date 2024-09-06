@@ -140,7 +140,7 @@ export const StyledIconeConta = styled.div`
 export const StyleCabecalhoVerde = styled.header`
     display: flex;
     height: 10vh;
-     flex-direction: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -172,8 +172,15 @@ export const StyleCabecalhoVerde = styled.header`
             background-repeat: no-repeat;
             padding-left: 5vw;
             color: #3da3d0;
-            font-size: 1vw;
+            font-size: 1.4em;
         }
+`;
+
+export const StyledTituloServico = styled.h3`
+  color: inherit;
+  font-size: 0.9em;
+  position: absolute;
+  
 `;
 
 

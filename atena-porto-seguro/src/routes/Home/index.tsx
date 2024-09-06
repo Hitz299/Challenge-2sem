@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BgInicial from "../../components/BgInicial/BgInicial";
 import Button from "../../components/Button/Button";
 import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
@@ -18,15 +19,20 @@ export default function Home() {
 
       <BgInicial>
 
-        <Funcionalidades nome="Seus veículos" link="./meus/veiculos"
+        <Link to = "./meus/veiculos">
+        <Funcionalidades nome="Seus veículos"
           icone={<StylediconeCarro />} cor="#68ee86" />
+</Link>
 
-        <Funcionalidades nome="Adicionar veículos" link="./adicionar/veiculos"
+ <Link to = "./adicionar/veiculos">
+        <Funcionalidades nome="Adicionar veículos"
           icone={<StyledIconeAdd />} cor="#3da3d0" />
+</Link>
 
-        <Funcionalidades nome="Obter Ajuda" link="./chatbot"
+<Link to = "./chatbot">
+        <Funcionalidades nome="Obter Ajuda"
           icone={<StyledIconeContato />} cor="#68ee86" />
-
+</Link>
         <StyledCentraliza>
           <Button titulo="Integrantes" />
       </StyledCentraliza>
