@@ -5,21 +5,72 @@ import { GrContact } from "react-icons/gr";
 
 export const StylediconeCarro  = styled(FaCar)`
   
-     width: 1em;
-     height: 1em;
+    
+     @media screen and (max-width: 4400px) { 
+            width: 1em;
+            height: 1em;
+    }
 
-`;
+     @media screen and (max-width: 1440px) {
+        width: 1em;
+        height: 1em;
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 2em;
+            height: 2em;
+    }
+
+        @media screen and (max-width: 564px) {  
+            width: 2em;
+            height: 2em;
+    }
+
+`;  
 
 export const StyledIconeAdd  = styled(GrAdd)`
   
-     width: 1em;
-     height: 1em;
+     @media screen and (max-width: 4400px) { 
+            width: 1em;
+            height: 1em;
+    }
+
+     @media screen and (max-width: 1440px) {
+        width: 1em;
+        height: 1em;
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 2em;
+            height: 2em;
+    }
+
+        @media screen and (max-width: 564px) {  
+            width: 2em;
+            height: 2em;
+    }
 `;
 
 export const StyledIconeContato  = styled(GrContact)`
-     width: 1em;
-     height: 1em;
+    @media screen and (max-width: 4400px) { 
+            width: 1em;
+            height: 1em;
+    }
 
+     @media screen and (max-width: 1440px) {
+        width: 1em;
+        height: 1em;
+    }
+
+       @media screen and (max-width: 761px) {
+            width: 2em;
+            height: 2em;
+    }
+
+        @media screen and (max-width: 564px) {  
+            width: 2em;
+            height: 2em;
+    }
 `;
 
 
@@ -29,8 +80,10 @@ export const StyleServicosContainer = styled.div`
     justify-content: center;
     text-align: center;
     width: 100vw;
+    height: 100vh;
     gap: 10vh;
-    margin-top: 3%;
+    padding-bottom: 20vh;
+    margin-top: 2.5%;
 
 `;
 
@@ -40,8 +93,8 @@ export const StyleFundoInicial = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100px;
+    max-width: 120rem;
     position: fixed;
 `;
 
@@ -52,25 +105,30 @@ export const StyleIconeServico = styled.div`
      justify-content: center;
      align-items: center;
      text-align: center;
-     width: 1.6em;
-     height: 1.6em;
+
 
      @media screen and (max-width: 4400px) { 
             padding: 12px;
-            
+            width: 1.6em;
+            height: 1.6em;
     }
 
      @media screen and (max-width: 1440px) {
         padding: 8px;
+        width: 1.6em;
+        height: 1.6em;
     }
 
        @media screen and (max-width: 761px) {
             padding: 6px;
-          
+            width: 2.8em;
+            height: 2.8em;
     }
 
         @media screen and (max-width: 564px) {  
             padding: 4px;
+            width: 3.4em;
+            height: 3.4em;
     }
 
 `;
