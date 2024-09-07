@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import BgInicial from "../../components/BgInicial/BgInicial";
 import Button from "../../components/Button/Button";
 import CabecalhoInicial from "../../components/CabecalhoInicial/CabecalhoInicial";
@@ -10,6 +10,12 @@ import { StyledCentraliza} from "../../style/styledGeral";
 export default function Home() {
 
   document.title = "Home";
+
+  const navigate = useNavigate();
+
+  const btnIntegrantes = () => {
+    navigate("./integrantes");  
+  };
 
   return (
     <>
@@ -34,7 +40,7 @@ export default function Home() {
           icone={<StyledIconeContato />} cor="#68ee86" />
 </StyledLinkServico>
         <StyledCentraliza>
-          <Button click={() => <Navigate to="./integrantes"/>} titulo="Integrantes"/>
+          <Button click={btnIntegrantes} titulo="Integrantes"/>
           
       </StyledCentraliza>
       </BgInicial>
