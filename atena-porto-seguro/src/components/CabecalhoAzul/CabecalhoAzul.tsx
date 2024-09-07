@@ -1,5 +1,5 @@
 
-import { StyleCabecalhoAzul} from '../../style/styled-cadastro'
+import { StyledCabecalhoAzul} from '../../style/styled-cadastro'
 
 interface CabecalhoAzulProps
 {
@@ -9,9 +9,9 @@ interface CabecalhoAzulProps
 export default function CabecalhoAzul({titulo}:CabecalhoAzulProps) {
   return (
     <>
-    <StyleCabecalhoAzul>
+    <StyledCabecalhoAzul>
       <h1>{titulo}</h1>
-    </StyleCabecalhoAzul>
+    </StyledCabecalhoAzul>
   </>
   )
 }

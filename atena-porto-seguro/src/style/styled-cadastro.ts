@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-export const StyleCabecalhoAzul = styled.header`
+export const StyledCabecalhoAzul = styled.header`
     display: flex;
     background-color: #3da3d0;
     padding: 2.6em;
@@ -9,7 +9,7 @@ export const StyleCabecalhoAzul = styled.header`
     position: static;
 `;
 
-export const StyleGradient = styled.div`
+export const StyledGradient = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -51,7 +51,7 @@ img {
 
 `
 
-export const StyleRepositorioContainer = styled.div`
+export const StyledRepositorioContainer = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -91,28 +91,28 @@ export const StyleRepositorioContainer = styled.div`
 
 `;
 
-export const StyleRodapeIntegrantes = styled.footer`
+export const StyledRodapeIntegrantes = styled.footer`
     margin-top: 4vh;
     font-size: 100%;
 `;
 
-export const StyleButtonRedefinir = styled.button`
+export const StyledButtonRedefinir = styled.button`
     margin-top: 20vh;  
 `;
 
-export const StyleButtonEsqueci = styled.button`
+export const StyledButtonEsqueci = styled.button`
     margin-top: 12vh;    
 `;
 
-export const StyleParagrafoCadastro = styled.p`
+export const StyledParagrafoCadastro = styled.p`
     margin-top: 16vh;
 `;
 
-export const StyleH2 = styled.h2`
+export const StyledH2 = styled.h2`
     margin-top: 10vh;
 `;
 
-export const StyleInformativo = styled.p`
+export const StyledInformativo = styled.p`
     margin-bottom: 8vh;
 `;
 

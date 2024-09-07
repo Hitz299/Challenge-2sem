@@ -105,7 +105,7 @@ export const StyledLinkServico = styled(Link)`
   width: 1em;
 `;
 
-export const StyleServicosContainer = styled.div`
+export const StyledServicosContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -117,7 +117,7 @@ export const StyleServicosContainer = styled.div`
 
 `;
 
-export const StyleFundoInicial = styled.div`
+export const StyledFundoInicial = styled.div`
     display: flex;
     background-image: url(/background-1280x985.jpg);
     background-size: cover;
@@ -128,7 +128,7 @@ export const StyleFundoInicial = styled.div`
     position: fixed;
 `;
 
-export const StyleIconeServico = styled.div`
+export const StyledIconeServico = styled.div`
      background-color: #000000;
      border-radius: 100%;
      display: block;
@@ -170,7 +170,7 @@ export const StyledIconeConta = styled.div`
 
 
 
-export const StyleCabecalhoVerde = styled.header`
+export const StyledCabecalhoVerde = styled.header`
 
         
         display: flex;
@@ -193,11 +193,11 @@ export const StyledTituloServico = styled.h3`
 `;
 
 
-interface StyleServicoProps {
+interface StyledServicoProps {
     color: string; // Define o tipo da prop color
 }
 
-export const StyleServico = styled.div<StyleServicoProps>`
+export const StyledServico = styled.div<StyledServicoProps>`
 
 
     display: flex;
@@ -244,7 +244,7 @@ export const StyleServico = styled.div<StyleServicoProps>`
 
     }
 `
-export const StyleLogoPorto = styled.img`
+export const StyledLogoPorto = styled.img`
     @media screen and (max-width: 4400px) {
         width: 420px;
     }
@@ -258,7 +258,7 @@ export const StyleLogoPorto = styled.img`
 }
 `
 
-export const StyleImgFundoIncial = styled.img`
+export const StyledImgFundoIncial = styled.img`
     @media screen and (max-width: 4400px) {
         width: 50px;
     }

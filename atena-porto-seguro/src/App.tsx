@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom"
-import { StyleGeral } from "./style/styledGeral"
+import { StyledGeral } from "./style/styledGeral"
 
 
 export default function App() {
   return (
     <>
-    <StyleGeral/>
+    <StyledGeral/>
       <Outlet/>
     </>
   )

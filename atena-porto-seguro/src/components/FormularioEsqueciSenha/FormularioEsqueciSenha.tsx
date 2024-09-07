@@ -1,6 +1,6 @@
-import { StyleParagrafoCadastro } from "../../style/styled-cadastro";
+import { StyledParagrafoCadastro } from "../../style/styled-cadastro";
 import { StyledInput } from "../../style/styled-conta";
-import { StyleContainerEntrada } from "../../style/styledGeral";
+import { StyledContainerEntrada } from "../../style/styledGeral";
 
 
 
@@ -8,11 +8,11 @@ import { StyleContainerEntrada } from "../../style/styledGeral";
 export default function FormularioEsqueciSenha() {
   return (
     <>
-    <StyleContainerEntrada>
-               <StyleParagrafoCadastro/>
+    <StyledContainerEntrada>
+               <StyledParagrafoCadastro/>
                 <label htmlFor="email">Email</label>
                 <StyledInput type="email" placeholder="Informe seu Email"/>
-            </StyleContainerEntrada>
+            </StyledContainerEntrada>
     </>
   )
 }

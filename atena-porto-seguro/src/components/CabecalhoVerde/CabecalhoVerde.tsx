@@ -1,4 +1,4 @@
-import { StyleCabecalhoVerde } from "../../style/style-tela-inicial";
+import { StyledCabecalhoVerde } from "../../style/style-tela-inicial";
 
 interface CabecalhoVerdeProps
 {
@@ -8,9 +8,9 @@ interface CabecalhoVerdeProps
 export default function CabecalhoVerde({titulo}: CabecalhoVerdeProps) {
     return (
         <>
-        <StyleCabecalhoVerde>
+        <StyledCabecalhoVerde>
             <h1>{titulo}</h1>
-        </StyleCabecalhoVerde>
+        </StyledCabecalhoVerde>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyleContaContainer = styled.div`
+export const StyledContaContainer = styled.div`
     margin-top: 6vh;
     h2 {
     text-align: center;
@@ -8,7 +8,7 @@ export const StyleContaContainer = styled.div`
     }
 `;
 
-export const StyleConta = styled.div`
+export const StyledConta = styled.div`
     
     display: grid;
     justify-items: center;
@@ -38,7 +38,7 @@ export const StyledInput = styled.input`
   }
     `;
 
-export const StyleButtonConta = styled.button`
+export const StyledButtonConta = styled.button`
 
     margin: auto;
     display: flex;

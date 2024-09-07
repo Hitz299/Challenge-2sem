@@ -1,5 +1,5 @@
 
-import { StyledLi, StyledLink, StyleRodapeLink } from "../../style/styledGeral";
+import { StyledLi, StyledLink, StyledRodapeLink } from "../../style/styledGeral";
 
 interface RodapeCadastroProps {
     link1: string
@@ -13,11 +13,11 @@ export default function RodapeCadastro({link1, link2, nomeLink1, nomeLink2}: Rod
   return (
     <>
         <nav>
-            <StyleRodapeLink>
+            <StyledRodapeLink>
                 <StyledLi><StyledLink to={link1}>{nomeLink1} </StyledLink></StyledLi>
                 <StyledLi><StyledLink to={link2}>{nomeLink2}</StyledLink></StyledLi>
 
-            </StyleRodapeLink>
+            </StyledRodapeLink>
         </nav>    
     
     </>

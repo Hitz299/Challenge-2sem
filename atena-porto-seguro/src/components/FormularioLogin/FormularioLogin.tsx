@@ -1,21 +1,21 @@
 
 import { StyledInput } from "../../style/styled-conta";
-import { StyleContainerEntrada } from "../../style/styledGeral";
+import { StyledContainerEntrada } from "../../style/styledGeral";
 
 export default function FormularioLogin() {
   return (
      <>
         <form>
-            <StyleContainerEntrada>
+            <StyledContainerEntrada>
                
                 <label htmlFor="email">Email</label>
                 <StyledInput type="email" placeholder="Digite seu Email"/>
-            </StyleContainerEntrada>
-            <StyleContainerEntrada>
+            </StyledContainerEntrada>
+            <StyledContainerEntrada>
                 
                 <label htmlFor="senha">Senha</label>
                 <StyledInput type="password" placeholder="Digite sua senha"/>
-            </StyleContainerEntrada>
+            </StyledContainerEntrada>
           
         </form>
      

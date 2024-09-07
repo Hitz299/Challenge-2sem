@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { createGlobalStyle, styled } from "styled-components";
 
 
-export const StyleGeral = createGlobalStyle`
+export const StyledGeral = createGlobalStyle`
 
   *{
   margin: 0;
@@ -30,7 +30,7 @@ export const StyledLink = styled(Link)`
 
 
 
-export const StyleContainerEntrada = styled.div`
+export const StyledContainerEntrada = styled.div`
   
   display: flex;
   position: relative;
@@ -106,7 +106,7 @@ export const StyledButton = styled.button`
   }
 `
 
-export const StyleRodapeLink = styled.ul`
+export const StyledRodapeLink = styled.ul`
     display: flex;
     flex-direction: row;
 

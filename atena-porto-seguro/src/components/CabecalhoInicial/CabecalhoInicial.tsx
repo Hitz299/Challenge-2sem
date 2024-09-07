@@ -1,4 +1,4 @@
-import { StyleCabecalhoVerde, StylediconePerfil, StyleLogoPorto} from "../../style/style-tela-inicial";
+import { StyledCabecalhoVerde, StylediconePerfil, StyledLogoPorto} from "../../style/style-tela-inicial";
 
 interface CabecalhoInicialProps
 {
@@ -9,11 +9,11 @@ export default function CabecalhoInicial({titulo}: CabecalhoInicialProps) {
   return (
     <>
     
-        <StyleCabecalhoVerde>
+        <StyledCabecalhoVerde>
              <h1>{titulo}</h1>
-             <StyleLogoPorto src="/public/logo-portoseguro.webp" alt="Logo da Porto Seguro" />
+             <StyledLogoPorto src="/public/logo-portoseguro.webp" alt="Logo da Porto Seguro" />
           <StylediconePerfil/>
-        </StyleCabecalhoVerde>
+        </StyledCabecalhoVerde>
     
     </>
   )

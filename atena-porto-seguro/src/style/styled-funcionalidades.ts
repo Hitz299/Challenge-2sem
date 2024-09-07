@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyleGradient = styled.div`
+export const StyledGradient = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -15,7 +15,7 @@ export const StyleGradient = styled.div`
     position: fixed;
     `;
 
-export const StyleChatContainer = styled.div`
+export const StyledChatContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -29,7 +29,7 @@ font-size: 1vw;
 
 `;
 
-export const StyleChatBox = styled.div`
+export const StyledChatBox = styled.div`
 position: static;
 display: flex;
 height: 30vh;
@@ -40,7 +40,7 @@ margin-bottom: 5vh;
 color: #ffffff;
 `;
 
-export const StyleMeusVeiculosContainer = styled.div `
+export const StyledMeusVeiculosContainer = styled.div `
     display: block;
     background-color: #d4d4d4;
     padding-top: 3vh;
@@ -48,7 +48,7 @@ export const StyleMeusVeiculosContainer = styled.div `
     width: 100vw;
 `;
 
-export const StyleVeiculosContainer = styled.div `
+export const StyledVeiculosContainer = styled.div `
     margin-top: 6vh;
     display: grid;
     height: 62vh;
@@ -60,7 +60,7 @@ export const StyleVeiculosContainer = styled.div `
     row-gap: 5vw;         
 `; 
 
-export const StyleNomeVeiculo = styled.div `
+export const StyledNomeVeiculo = styled.div `
     display: block;
     text-align: center;
     align-content: center;
@@ -72,7 +72,7 @@ export const StyleNomeVeiculo = styled.div `
     height: 6vh;
 `;
 
-export const StyleInfoVeiculo = styled.div `
+export const StyledInfoVeiculo = styled.div `
     position: relative;
     display: flex;
     flex-direction: row;
@@ -82,7 +82,7 @@ export const StyleInfoVeiculo = styled.div `
     align-items: center;
   `;
   
-  export const StyleItemVeiculo = styled.div ` 
+  export const StyledItemVeiculo = styled.div ` 
     background-color: #3da3d0;
     text-align: center;
     align-content: center;
@@ -93,7 +93,7 @@ export const StyleInfoVeiculo = styled.div `
     font-size: 2vw;
 `;
 
-export const StyleLocalizar = styled.div `
+export const StyledLocalizar = styled.div `
     background-image: url("/public/teste_maps.png");
     background-size: cover;
     background-repeat: no-repeat;

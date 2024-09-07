@@ -1,4 +1,4 @@
-import { StyleFundoInicial, StyleServicosContainer } from "../../style/style-tela-inicial";
+import { StyledFundoInicial, StyledServicosContainer } from "../../style/style-tela-inicial";
 
 interface BgInicialProps {
     children: React.ReactNode;
@@ -10,13 +10,13 @@ export default function BgInicial({ children }: BgInicialProps) {
         <>
             <main>
 
-                <StyleFundoInicial>
+                <StyledFundoInicial>
 
-                    <StyleServicosContainer>
+                    <StyledServicosContainer>
                         {children}
-                    </StyleServicosContainer>
+                    </StyledServicosContainer>
 
-                </StyleFundoInicial>
+                </StyledFundoInicial>
 
             </main>
 

@@ -1,4 +1,4 @@
-import { StyleGradient } from "../../style/styled-cadastro";
+import { StyledGradient } from "../../style/styled-cadastro";
 
 interface BgGradientProps {
   children: React.ReactNode;
@@ -6,10 +6,10 @@ interface BgGradientProps {
 
 export default function BgGradient({children}: BgGradientProps) {
   return (
-    <StyleGradient>
+    <StyledGradient>
       <main>
         {children}
       </main>
-    </StyleGradient>
+    </StyledGradient>
   );
 }
