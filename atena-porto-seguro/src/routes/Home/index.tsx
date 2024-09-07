@@ -1,9 +1,10 @@
+import { Navigate } from "react-router-dom";
 import BgInicial from "../../components/BgInicial/BgInicial";
 import Button from "../../components/Button/Button";
-import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
+import CabecalhoInicial from "../../components/CabecalhoInicial/CabecalhoInicial";
 import Funcionalidades from "../../components/Funcionalidades/Funcionalidades";
 import { StyledIconeAdd, StylediconeCarro, StyledIconeContato, StyledLinkServico } from "../../style/style-tela-inicial";
-import { StyledCentraliza, } from "../../style/styledGeral";
+import { StyledCentraliza} from "../../style/styledGeral";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <CabecalhoVerde titulo="Página inicial" />
+      <CabecalhoInicial titulo="Página inicial" />
 
 
 
@@ -33,7 +34,8 @@ export default function Home() {
           icone={<StyledIconeContato />} cor="#68ee86" />
 </StyledLinkServico>
         <StyledCentraliza>
-          <Button titulo="Integrantes" />
+          <Button click={() => <Navigate to="./integrantes"/>} titulo="Integrantes"/>
+          
       </StyledCentraliza>
       </BgInicial>
     </>

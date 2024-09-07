@@ -15,7 +15,7 @@ export default function EsqueciSenha() {
       <BgGradient>
 
           <FormularioEsqueciSenha/>
-          <Button titulo="Enviar"/>
+          <Button click={() => {}} titulo="Enviar"/>
       </BgGradient>
    </>
   )

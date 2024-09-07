@@ -15,7 +15,7 @@ export default function CriarConta() {
 
         
         <FormularioCriarConta/>
-        <Button titulo="Criar"/>
+        <Button click={() => {}} titulo="Criar"/>
       </BgGradient>
     </>
   )

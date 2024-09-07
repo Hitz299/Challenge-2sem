@@ -75,10 +75,10 @@ export const StyledButton = styled.button`
   align-items: center;
 
 
-
   &:hover {
-    transition: 0.8s ease-in;
+    transition: 0.4s ease-in;
     background-color: #68ee86;
+    color: black;
   }
 
   @media screen and (max-height: 4400px) {

@@ -17,7 +17,7 @@ export default function Login() {
         
         <FormularioLogin/>
 
-        <Button titulo="Entrar"/>
+        <Button click={() => {}} titulo="Entrar"/>
 
        <RodapeCadastro link1="./recuperar/senha" link2="./criar/conta"
        nomeLink1="Esqueci minha senha" nomeLink2="Criar Conta" />
