@@ -116,3 +116,12 @@ export const StyledInformativo = styled.p`
     margin-bottom: 8vh;
 `;
 
+
+export const StyledImgIntegrante = styled.img`
+
+  border-radius: 100px;
+  width: 24%;
+  position: relative;
+  margin-bottom: 5vh;
+
+`

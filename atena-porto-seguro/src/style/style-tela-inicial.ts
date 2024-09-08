@@ -194,7 +194,7 @@ export const StyledTituloServico = styled.h3`
 
 
 interface StyledServicoProps {
-    color: string; // Define o tipo da prop color
+    color: string;
 }
 
 export const StyledServico = styled.div<StyledServicoProps>`
