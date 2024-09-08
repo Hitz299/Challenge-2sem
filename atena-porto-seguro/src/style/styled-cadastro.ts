@@ -116,12 +116,17 @@ export const StyledInformativo = styled.p`
     margin-bottom: 8vh;
 `;
 
+interface ImgIntegranteProps
+{
+  largura: string,
+}
 
-export const StyledImgIntegrante = styled.img`
+export const StyledImgIntegrante = styled.img<ImgIntegranteProps>`
 
-  border-radius: 100px;
-  width: 24%;
+  border-radius: 10%;
+  width: ${(props) => props.largura};
   position: relative;
   margin-bottom: 5vh;
+
 
 `
