@@ -63,6 +63,19 @@ export const StyledRepositorioContainer = styled.div`
     margin-bottom: 6vh;
     width: 28vw;
 
+
+    &:hover
+    {
+      transition: all 0.2s ease-in-out;
+      background-color: #000000;
+    }
+
+    p{
+      color:  rgb(153, 0, 255);
+
+
+    }
+
     @media screen and (max-width: 761px) {
  
     font-size: 1vw;
@@ -128,5 +141,11 @@ export const StyledImgIntegrante = styled.img<ImgIntegranteProps>`
   position: relative;
   margin-bottom: 5vh;
 
+
+`
+
+export const StyledGitHub = styled.img`
+
+  width: 12%
 
 `

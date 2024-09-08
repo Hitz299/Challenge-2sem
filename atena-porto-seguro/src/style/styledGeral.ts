@@ -146,3 +146,8 @@ text-align: center;
 align-items: center;
 justify-content: center;
 `;
+
+export const StyledLinkExterno = styled.a`
+  
+  text-decoration: none;
+`;
