@@ -111,8 +111,7 @@ export const StyledServicosContainer = styled.div`
     text-align: center;
     width: 100vw;
     height: 100vh;
-    gap: 8vh;
-    margin-top: 8vh;
+    margin-top: 3vh;
 
 `;
 
@@ -206,6 +205,7 @@ export const StyledServico = styled.div<StyledServicoProps>`
     color: #ffffff;
     background-color: ${(props) => props.color};
     cursor: pointer;
+    margin-top: 5vh;
     border-radius: 0 100px  100px 0; 
     
 

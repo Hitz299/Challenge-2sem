@@ -1,32 +1,31 @@
 import React from "react";
-import { StyledTituloServico, StyledIconeServico, StyledServico } from "../../style/style-tela-inicial";
-
+import { useNavigate } from "react-router-dom";
+import { StyledIconeServico, StyledServico, StyledTituloServico } from "../../style/style-tela-inicial";
 
 interface FuncionalidadesProps {
-
     cor: string;
     nome: string;
     icone: string | React.ReactNode;
+    link: string;
 }
 
-export default function Funcionalidades({ cor, nome, icone}: FuncionalidadesProps) {
+export default function Funcionalidades({ cor, nome, icone, link }: FuncionalidadesProps) {
+    const navigate = useNavigate();
 
+    const handleClick = () => {
+        navigate(link);
+    };
 
     return (
-        <>
-
-            <StyledServico color={cor}>
+        <StyledServico color={cor} onClick={handleClick}>
             <StyledIconeServico>
                 <figure>
                     {icone}
                 </figure>
             </StyledIconeServico>
             <div>
-            <StyledTituloServico>{nome}</StyledTituloServico>
+                <StyledTituloServico>{nome}</StyledTituloServico>
             </div>
         </StyledServico>
-
-            
-        </>
-    )
+    );
 }
