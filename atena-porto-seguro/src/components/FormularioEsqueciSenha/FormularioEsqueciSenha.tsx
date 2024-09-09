@@ -8,11 +8,11 @@ import { StyledContainerEntrada } from "../../style/styledGeral";
 export default function FormularioEsqueciSenha() {
   return (
     <>
-    <StyledContainerEntrada>
-               <StyledParagrafoCadastro/>
-                <label>Email</label>
-                <StyledInput type="email" placeholder="Informe seu Email"/>
-            </StyledContainerEntrada>
+      <StyledContainerEntrada>
+        <StyledParagrafoCadastro />
+        <label htmlFor="email">Email</label>
+        <StyledInput id="email" type="email" placeholder="Informe seu Email" />
+      </StyledContainerEntrada>
     </>
   )
 }

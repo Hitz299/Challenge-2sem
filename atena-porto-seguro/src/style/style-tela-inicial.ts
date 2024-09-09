@@ -1,11 +1,10 @@
-import styled from 'styled-components';
 import { FaCar } from 'react-icons/fa';
-import { GrAdd } from "react-icons/gr";
-import { GrContact } from "react-icons/gr";
-import { Link } from 'react-router-dom';
+import { GrAdd, GrContact } from "react-icons/gr";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-export const StylediconePerfil  = styled(IoPersonCircleOutline)`
+export const StylediconePerfil = styled(IoPersonCircleOutline)`
       
     cursor: pointer;
     
@@ -30,7 +29,7 @@ export const StylediconePerfil  = styled(IoPersonCircleOutline)`
 
 `
 
-export const StylediconeCarro  = styled(FaCar)`
+export const StylediconeCarro = styled(FaCar)`
   
     
      @media screen and (max-width: 4400px) { 
@@ -53,9 +52,9 @@ export const StylediconeCarro  = styled(FaCar)`
             height: 2em;
     }
 
-`;  
+`;
 
-export const StyledIconeAdd  = styled(GrAdd)`
+export const StyledIconeAdd = styled(GrAdd)`
   
      @media screen and (max-width: 4400px) { 
             width: 1em;
@@ -78,7 +77,7 @@ export const StyledIconeAdd  = styled(GrAdd)`
     }
 `;
 
-export const StyledIconeContato  = styled(GrContact)`
+export const StyledIconeContato = styled(GrContact)`
     @media screen and (max-width: 4400px) { 
             width: 1em;
             height: 1em;
