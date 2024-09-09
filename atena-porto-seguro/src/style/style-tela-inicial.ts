@@ -110,7 +110,7 @@ export const StyledServicosContainer = styled.div`
     justify-content: start;
     text-align: center;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     gap: 8vh;
     margin-top: 8vh;
 

@@ -39,12 +39,12 @@ flex-direction: row;
 justify-content: space-around;
 gap: 30vw;
 
-h1 {
+& h1 {
   margin-top: 8vh;
   font-size: 3vw;
 }
 
-img {
+& img {
   width: 20vw;
   margin-top: 8vh;
 }
@@ -70,7 +70,7 @@ export const StyledRepositorioContainer = styled.div`
       background-color: #000000;
     }
 
-    p{
+    & p{
       color:  rgb(153, 0, 255);
 
 
@@ -80,7 +80,7 @@ export const StyledRepositorioContainer = styled.div`
  
     font-size: 1vw;
 
-    img {
+    & img {
       width: 3vw;
     }
   }
@@ -89,7 +89,7 @@ export const StyledRepositorioContainer = styled.div`
 
     font-size: 1.5vw;
 
-    img {
+    & img {
       width: 4vw;
     }
   }
@@ -97,7 +97,7 @@ export const StyledRepositorioContainer = styled.div`
     @media screen and (max-width: 4400px) {
     font-size: 2vw;
 
-    img {
+    & img {
       width: 5vw;
     }
   }
@@ -129,8 +129,7 @@ export const StyledInformativo = styled.p`
     margin-bottom: 8vh;
 `;
 
-interface ImgIntegranteProps
-{
+interface ImgIntegranteProps {
   largura: string,
 }
 

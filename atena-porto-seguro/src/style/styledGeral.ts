@@ -40,7 +40,7 @@ export const StyledContainerEntrada = styled.div`
 
 
 
-  label{
+  & label{
     margin-left: 5%;
     margin-top: 5vh;
 
@@ -138,7 +138,7 @@ export const StyledRodapeLink = styled.ul`
 
 `
 
-export const StyledCentraliza  = styled.div`
+export const StyledCentraliza = styled.div`
 
 display: block;
 position: relative;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledContaContainer = styled.div`
     margin-top: 6vh;
-    h2 {
+    & h2 {
     text-align: center;
     margin-bottom: 5vh;
     }
