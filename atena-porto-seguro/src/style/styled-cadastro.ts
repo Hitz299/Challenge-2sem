@@ -26,11 +26,11 @@ export const StyledGradient = styled.div`
 `;
 
 export const StyledIntegrantesInfo = styled.div`
-    margin-top: 6vh;
+    margin-top: 4vh;
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
     justify-items: center;
-
+    gap: 3vh;
 `;
 
 export const StyledIntegrantesTopo = styled.div`
@@ -38,15 +38,15 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 gap: 30vw;
+margin-top: 4vh;
 
 & h1 {
-  margin-top: 8vh;
+
   font-size: 3vw;
 }
 
 & img {
   width: 20vw;
-  margin-top: 8vh;
 }
 
 `
