@@ -245,11 +245,11 @@ export const StyledServico = styled.div<StyledServicoProps>`
 `
 export const StyledLogoPorto = styled.img`
     @media screen and (max-width: 4400px) {
-        width: 420px;
+        width: 300px;
     }
     
     @media screen and (max-width: 1440px) {
-        width: 300px;
+        width: 200px;
     }
     
     @media screen and (max-width: 767px) {

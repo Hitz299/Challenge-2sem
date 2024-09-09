@@ -28,10 +28,11 @@ export default function RodapeIntegrantes() {
           <MdCloud />
         </StyledRepositorioContainer>
 
-
-
-        <StyledLink to="/home">Página Inicial</StyledLink>
-
+        <div>
+          <nav>
+            <StyledLink to="/home">Página Inicial</StyledLink>
+          </nav>
+        </div>
       </StyledRodapeIntegrantes>
 
 

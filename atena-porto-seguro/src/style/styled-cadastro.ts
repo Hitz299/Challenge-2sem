@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const StyledCabecalhoAzul = styled.header`
     display: flex;
     background-color: #3da3d0;
-    padding: 2.6em;
+    padding: 0.8em;
     justify-content: center;
     position: static;
 `;
@@ -105,8 +105,15 @@ export const StyledRepositorioContainer = styled.div`
 `;
 
 export const StyledRodapeIntegrantes = styled.footer`
-    margin-top: 4vh;
+    margin-top: 5vh;
     font-size: 100%;
+    display: flex;
+    height: 10vh;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
 `;
 
 export const StyledButtonRedefinir = styled.button`

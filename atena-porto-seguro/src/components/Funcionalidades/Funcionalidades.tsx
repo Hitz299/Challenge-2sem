@@ -17,7 +17,7 @@ export default function Funcionalidades({ cor, nome, icone, link }: Funcionalida
     };
 
     return (
-        <StyledServico color={cor} onClick={handleClick}>
+        <StyledServico color={cor} onClick={navegar}>
             <StyledIconeServico>
                 <figure>
                     {icone}
