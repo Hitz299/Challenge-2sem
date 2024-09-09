@@ -14,8 +14,8 @@ export default function Integrantes() {
       <BgGradient>
 
         <IntegrantesTopo />
-        <InfoIntegrantes/>
-        <RodapeIntegrantes/>
+        <InfoIntegrantes />
+        <RodapeIntegrantes link="https://github.com/Hitz299/Challenge-2sem/tree/front" />
 
       </BgGradient>
 

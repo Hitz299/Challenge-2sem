@@ -12,7 +12,7 @@ interface FuncionalidadesProps {
 export default function Funcionalidades({ cor, nome, icone, link }: FuncionalidadesProps) {
     const navigate = useNavigate();
 
-    const handleClick = () => {
+    const navegar = () => {
         navigate(link);
     };
 

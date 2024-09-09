@@ -62,12 +62,12 @@ export const StyledRepositorioContainer = styled.div`
     border: inset 0.15vw rgb(153, 0, 255);
     margin-bottom: 6vh;
     width: 28vw;
-
+    cursor: pointer;
 
     &:hover
     {
       transition: all 0.2s ease-in-out;
-      background-color: #000000;
+      background-color: #CECECE76;
     }
 
     & p{
