@@ -1,6 +1,6 @@
 import { StyledRepositorioContainer, StyledRodapeIntegrantes } from "../../style/styled-cadastro";
 import { MdCloud } from "react-icons/md";
-import { StyledLinkExterno } from "../../style/styledGeral";
+import { StyledLink, StyledLinkExterno } from "../../style/styledGeral";
 
 
 export default function RodapeIntegrantes() {
@@ -20,6 +20,9 @@ export default function RodapeIntegrantes() {
                 </StyledRepositorioContainer>
             
             </StyledLinkExterno> 
+
+            <StyledLink to= "/home">Página Inicial</StyledLink>
+
         </StyledRodapeIntegrantes>
     
     

@@ -8,12 +8,12 @@ export default function FormularioLogin() {
         <form>
             <StyledContainerEntrada>
                
-                <label htmlFor="email">Email</label>
+                <label>Email</label>
                 <StyledInput type="email" placeholder="Digite seu Email"/>
             </StyledContainerEntrada>
             <StyledContainerEntrada>
                 
-                <label htmlFor="senha">Senha</label>
+                <label>Senha</label>
                 <StyledInput type="password" placeholder="Digite sua senha"/>
             </StyledContainerEntrada>
           
