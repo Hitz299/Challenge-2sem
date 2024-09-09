@@ -8,17 +8,17 @@ interface BgInicialProps {
 export default function BgInicial({ children }: BgInicialProps) {
     return (
         <>
-            <main>
 
                 <StyledFundoInicial>
+            <main>
 
                     <StyledServicosContainer>
                         {children}
                     </StyledServicosContainer>
+            </main>
 
                 </StyledFundoInicial>
 
-            </main>
 
         </>
     )

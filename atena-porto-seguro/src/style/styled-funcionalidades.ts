@@ -19,11 +19,10 @@ export const StyledChatContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 54vh;
+height: 90vh;
 width: 60vw;
 margin: 1.6vw auto;
 padding: 15px;
-border: 3px solid #3da3d0;
 border-radius: 5px;
 font-size: 1vw;
 
@@ -32,11 +31,10 @@ font-size: 1vw;
 export const StyledChatBox = styled.div`
 position: static;
 display: flex;
-height: 30vh;
-width: 50vw;
-border: 3px solid #68ee86;
+height: 55vh;
+width: 85vw;
+border: 3px solid #3da3d0;
 padding: 0.1em;
-margin-bottom: 5vh;
 color: #ffffff;
 `;
 
@@ -57,8 +55,52 @@ export const StyledVeiculosContainer = styled.div `
     justify-items: center;
     align-items: center;
     column-gap: 1vw;
-    row-gap: 5vw;         
+    row-gap: 5vw;        
+    
+     
 `; 
+
+export const StyledUserInput = styled.input `
+
+ 
+  flex-shrink: 0;
+  height: 8vh;
+   width: 50vw;
+    border: none;
+    text-align: center;
+    justify-items: center;
+    padding: 0.6em 1.2em;
+    font-size: 1.6em;
+    border-radius: 32px;
+    background-color: #cececea1;
+
+    @media screen and (max-width: 981px) {
+      width: 90vw;
+  }
+
+
+  
+`
+
+export const StyledContainerMensagem = styled.div `
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+    position: relative;
+
+    @media screen and (max-width: 4400px) {
+    gap: 10vw;
+  }
+    
+ @media screen and (max-width: 981px) {
+  padding-top: 6vh;
+    gap: 1vh;
+    flex-wrap: wrap;
+  }
+    
+`
+
 
 export const StyledNomeVeiculo = styled.div `
     display: block;
