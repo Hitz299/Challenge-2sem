@@ -7,23 +7,24 @@ import RodapeCadastro from "../../components/RodapeCadastro/RodapeCadastro";
 
 export default function Login() {
 
-    document.title = "Login";
+  document.title = "Login";
 
   return (
-    <>    
-     <CabecalhoAzul titulo="Login"/>
-       <BgGradient>
+    <>
+      <CabecalhoAzul titulo="Login" />
+      <BgGradient>
 
-        
-        <FormularioLogin/>
 
-        <Button click={() => {}} titulo="Entrar"/>
+        <FormularioLogin />
 
-       <RodapeCadastro link1="./recuperar/senha" link2="./criar/conta"
-       nomeLink1="Esqueci minha senha" nomeLink2="Criar Conta" />
+        <Button click={() => { }} titulo="Entrar" />
+
       </BgGradient>
-        
+      <RodapeCadastro link1="./recuperar/senha" link2="./criar/conta"
+        nomeLink1="Esqueci minha senha" nomeLink2="Criar Conta" />
+
+
     </>
-     
+
   )
 }

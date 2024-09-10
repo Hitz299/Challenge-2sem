@@ -57,7 +57,7 @@ export const StyledContainerEntrada = styled.div`
 `;
 
 export const StyledLi = styled.li`
-  list-style-type: none; 
+  list-style-type: none;
 `;
 
 
@@ -100,39 +100,35 @@ export const StyledButton = styled.button`
   }
 `
 
-export const StyledRodapeLink = styled.ul`
-    display: flex;
+export const StyledListaDesordenada = styled.ul`
+  display: flex;
+  justify-content: space-around;  
+  width: 100vw;           
+  gap: 10vw;               
+
+  @media screen and (max-width: 4400px) {
     flex-direction: row;
+  }
 
-    flex-wrap: wrap;
+  @media screen and (max-width: 567px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;            
+  }
+`;
+
+
+export const StyledRodapeLink = styled.footer`
+    display: flex;
     text-align: center;
-    gap: 3vh;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    width: 100vw;
+    margin-top: 60vh ;
+    padding: 10px;          
+`;
 
-
-
-    @media screen and (max-width: 1200px) {
-      row-gap: 50vw;
-    }
-
-
-    @media screen and (max-width: 876px) {
-      justify-content: center;
-      align-items: center;
-      gap: 40vw;
-    }
-
-
-      @media screen and (max-width: 567px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 8vh !important;
-    }
-
-    
-
-`
 
 export const StyledCentraliza = styled.div`
 

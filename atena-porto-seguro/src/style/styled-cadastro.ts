@@ -10,8 +10,8 @@ export const StyledCabecalhoAzul = styled.header`
 `;
 
 export const StyledGradient = styled.div`
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom, #68ee86, #3da3d0);

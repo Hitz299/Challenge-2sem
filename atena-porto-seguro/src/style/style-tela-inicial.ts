@@ -1,9 +1,9 @@
 import { FaCar } from 'react-icons/fa';
 import { GrAdd, GrContact } from "react-icons/gr";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { SlActionUndo } from "react-icons/sl";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { SlActionUndo } from "react-icons/sl";
 
 export const StyledVoltar = styled(SlActionUndo)`
 
@@ -23,15 +23,15 @@ export const StylediconePerfil = styled(IoPersonCircleOutline)`
     }
 
      @media screen and (max-width: 4400px) { 
-            width: 5em;
-            height: 5em;
+            width: 4.5em;
+            height: 4.5em;
     }
 
      
 
        @media screen and (max-width: 761px) {
-            width: 2em;
-            height: 2em;
+            width: 40px;
+            height: 40px;
     }
 
     
@@ -190,6 +190,18 @@ export const StyledCabecalhoVerde = styled.header`
         background-color: #68ee86;
         color: #3da3d0;
 
+        @media screen and (max-width: 4400px) {    
+            font-size: 20px;   
+        }
+
+        @media screen and (max-width: 1440px) {    
+            font-size: 14px;   
+        }
+
+        @media screen and (max-width: 761px) {    
+            font-size: 10px;   
+        }
+
 `;
 
 
@@ -262,7 +274,7 @@ export const StyledLogoPorto = styled.img`
     }
     
     @media screen and (max-width: 767px) {
-        width: 160px;
+        width: 120px;
 }
 `
 
