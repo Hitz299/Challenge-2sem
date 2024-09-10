@@ -1,5 +1,28 @@
 import styled from 'styled-components';
 
+
+
+export const StyledCadastrarVeiculosContainer = styled.div`
+
+  display: grid;
+  grid-template-columns: 30vw 30vw;
+  grid-template-rows: 20vh 20vh 20vh;
+  gap: 3vh 15vw;
+  background-color: aliceblue;
+
+   @media screen and (max-width: 981px) {
+  
+    grid-template-columns: 50vw;
+    
+  }
+
+
+`
+
+
+
+
+
 export const StyledGradient = styled.div`
     width: 100%;
     height: 100%;
