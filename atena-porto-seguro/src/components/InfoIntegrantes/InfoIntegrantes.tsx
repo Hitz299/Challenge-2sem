@@ -1,4 +1,4 @@
-import { StyledGitHub, StyledImgIntegrante, StyledIntegrantesInfo } from "../../style/styled-cadastro";
+import { StyledGitHub, StyledImgIntegrante, StyledIntegrantesInfo, StyledListaGitHub } from "../../style/styled-cadastro";
 
 
 
@@ -31,16 +31,19 @@ export default function InfoIntegrantes() {
                                 <span>RM 557707</span>
                                 <span>RM 558987</span>
 
-                                <a href="https://github.com/Nanfer12007" target="_blank"><StyledGitHub
-                                        src="/github-icone.png"
-                                        alt="git hub Gabriel" /></a>
-                                <a href="https://github.com/gudeaguiar" target="_blank"><StyledGitHub
-                                        src="/github-icone.png"
-                                        alt="git hub Gustavo" /></a>
-                                <a href="https://github.com/Hitz299" target="_blank"><StyledGitHub
-                                        src="/github-icone.png"
-                                        alt="git hub Nathan" /></a>
-
+                                <nav>
+                                        <StyledListaGitHub>
+                                                <a href="https://github.com/Nanfer12007" target="_blank"><StyledGitHub
+                                                        src="/github-icone.png"
+                                                        alt="git hub Gabriel" /></a>
+                                                <a href="https://github.com/gudeaguiar" target="_blank"><StyledGitHub
+                                                        src="/github-icone.png"
+                                                        alt="git hub Gustavo" /></a>
+                                                <a href="https://github.com/Hitz299" target="_blank"><StyledGitHub
+                                                        src="/github-icone.png"
+                                                        alt="git hub Nathan" /></a>
+                                        </StyledListaGitHub>
+                                </nav>
                         </StyledIntegrantesInfo>
 
 

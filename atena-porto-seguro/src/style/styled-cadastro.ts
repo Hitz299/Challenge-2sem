@@ -116,6 +116,15 @@ export const StyledRodapeIntegrantes = styled.footer`
 
 `;
 
+export const StyledListaGitHub = styled.footer`
+
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+    justify-items: center;
+    gap: 3vh;
+
+`
+
 export const StyledButtonRedefinir = styled.button`
     margin-top: 20vh;  
 `;
