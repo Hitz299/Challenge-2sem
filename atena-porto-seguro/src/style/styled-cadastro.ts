@@ -76,12 +76,11 @@ export const StyledRepositorioContainer = styled.div`
 
     }
 
-    @media screen and (max-width: 761px) {
- 
-    font-size: 1vw;
+    @media screen and (max-width: 4400px) {
+    font-size: 2vw;
 
     & img {
-      width: 3vw;
+      width: 5vw;
     }
   }
 
@@ -92,14 +91,15 @@ export const StyledRepositorioContainer = styled.div`
     & img {
       width: 4vw;
     }
-  }
 
-    @media screen and (max-width: 4400px) {
-    font-size: 2vw;
+    @media screen and (max-width: 761px) {
+ 
+    font-size: 1vw;
 
     & img {
-      width: 5vw;
+      width: 3vw;
     }
+  }
   }
 
 `;

@@ -3,6 +3,15 @@ import { GrAdd, GrContact } from "react-icons/gr";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { SlActionUndo } from "react-icons/sl";
+
+export const StyledVoltar = styled(SlActionUndo)`
+
+width: 40px;
+height:40px;
+
+
+`
 
 export const StylediconePerfil = styled(IoPersonCircleOutline)`
       

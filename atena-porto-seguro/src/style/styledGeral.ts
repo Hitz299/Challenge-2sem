@@ -44,15 +44,15 @@ export const StyledContainerEntrada = styled.div`
     margin-left: 5%;
     margin-top: 5vh;
 
-   @media screen and (max-height: 741px) {
-     font-size: 20px;
-  }
-
-  @media screen and (max-height: 4400px) {
+  @media screen and (max-width: 4400px) {
      font-size: 22px;
   }
   }
 
+
+   @media screen and (max-width: 741px) {
+     font-size: 20px;
+  }
   
 `;
 
@@ -63,7 +63,7 @@ export const StyledLi = styled.li`
 
 export const StyledButton = styled.button`
   display: block;
-  padding: 0.4vw;
+  padding: 0.2vw;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border-radius: 2em;
@@ -81,28 +81,22 @@ export const StyledButton = styled.button`
     color: black;
   }
 
-  @media screen and (max-height: 4400px) {
-     height: 80px;
-     width: 200px;
+  @media screen and (max-width: 4400px) {
+     height: 50px;
+     width: 180px;
      font-size: 1.5em;
   }
 
-  @media screen and (max-height: 741px) {
+  @media screen and (max-width: 981px) {
+    height: 50px;
+    width: 110px;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 741px) {
      height: 40px;
      width: 100px;
-     font-size: 0.9em;
-  }
-
-  @media screen and (max-width: 761px) {
-    height: 30px;
-    width: 85px;
-    font-size: 1em;
-  }
-
-  @media screen and (max-width: 981px) {
-    height: 45px;
-    width: 110px;
-    font-size: 1em;
+     font-size: 14px;
   }
 `
 
@@ -117,6 +111,18 @@ export const StyledRodapeLink = styled.ul`
 
 
 
+    @media screen and (max-width: 1200px) {
+      row-gap: 50vw;
+    }
+
+
+    @media screen and (max-width: 876px) {
+      justify-content: center;
+      align-items: center;
+      gap: 40vw;
+    }
+
+
       @media screen and (max-width: 567px) {
       flex-direction: column;
       justify-content: center;
@@ -124,17 +130,7 @@ export const StyledRodapeLink = styled.ul`
       gap: 8vh !important;
     }
 
-    @media screen and (max-width: 1200px) {
-      row-gap: 50vw;
-    }
-
     
-
-    @media screen and (max-width: 876px) {
-      justify-content: center;
-      align-items: center;
-      gap: 40vw;
-    }
 
 `
 

@@ -10,7 +10,7 @@ export default function CabecalhoInicial({ titulo }: CabecalhoInicialProps) {
 
       <StyledCabecalhoVerde>
         <h1>{titulo}</h1>
-        <StyledLogoPorto src="/public/logo-portoseguro.webp" alt="Logo da Porto Seguro" />
+        <StyledLogoPorto src="/logo-portoseguro.webp" alt="Logo da Porto Seguro" />
         <StylediconePerfil />
       </StyledCabecalhoVerde>
 
