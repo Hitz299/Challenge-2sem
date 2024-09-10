@@ -20,6 +20,7 @@ export default function RodapeCadastro({ link1, link2, nomeLink1, nomeLink2 }: R
           </StyledListaDesordenada>
 
         </nav>
+
       </StyledRodapeLink>
 
     </>

@@ -16,7 +16,6 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   font-size: 1.2em;
-  position: absolute;
   
   
 
@@ -33,15 +32,14 @@ export const StyledLink = styled(Link)`
 export const StyledContainerEntrada = styled.div`
   
   display: flex;
-  position: relative;
   flex-direction: column;
   text-align: start;
-  align-items: start;
-
+  align-items: center;
+  margin: 0 auto;
 
 
   & label{
-    margin-left: 5%;
+    margin-right: 30vw;
     margin-top: 5vh;
 
   @media screen and (max-width: 4400px) {
@@ -52,6 +50,10 @@ export const StyledContainerEntrada = styled.div`
 
    @media screen and (max-width: 741px) {
      font-size: 20px;
+     & label{
+
+      margin-right: 50vw;
+     }
   }
   
 `;
@@ -104,7 +106,7 @@ export const StyledListaDesordenada = styled.ul`
   display: flex;
   justify-content: space-around;  
   width: 100vw;           
-  gap: 10vw;               
+   gap: 10vw;               
 
   @media screen and (max-width: 4400px) {
     flex-direction: row;
@@ -120,27 +122,18 @@ export const StyledListaDesordenada = styled.ul`
 
 export const StyledRodapeLink = styled.footer`
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    width: 100vw;
-    margin-top: 60vh ;
-    padding: 10px;          
+    margin-top: 10vh ;       
 `;
 
 
 export const StyledCentraliza = styled.div`
-
+margin: 0 auto;
 display: block;
 position: relative;
-text-align: center;
-align-items: center;
-justify-content: center;
-width: 100vw;
 `;
 
 export const StyledLinkExterno = styled.a`
-  
   text-decoration: none;
+  display: inline;
+
 `;

@@ -1,4 +1,5 @@
 import { StyledGitHub, StyledImgIntegrante, StyledIntegrantesInfo, StyledListaGitHub } from "../../style/styled-cadastro";
+import { StyledCentraliza } from "../../style/styledGeral";
 
 
 
@@ -30,20 +31,21 @@ export default function InfoIntegrantes() {
                                 <span>RM 556588</span>
                                 <span>RM 557707</span>
                                 <span>RM 558987</span>
-
-                                <nav>
-                                        <StyledListaGitHub>
-                                                <a href="https://github.com/Nanfer12007" target="_blank"><StyledGitHub
-                                                        src="/github-icone.png"
-                                                        alt="git hub Gabriel" /></a>
-                                                <a href="https://github.com/gudeaguiar" target="_blank"><StyledGitHub
-                                                        src="/github-icone.png"
-                                                        alt="git hub Gustavo" /></a>
-                                                <a href="https://github.com/Hitz299" target="_blank"><StyledGitHub
-                                                        src="/github-icone.png"
-                                                        alt="git hub Nathan" /></a>
-                                        </StyledListaGitHub>
-                                </nav>
+                                <StyledCentraliza>
+                                        <nav>
+                                                <StyledListaGitHub>
+                                                        <a href="https://github.com/Nanfer12007" target="_blank"><StyledGitHub
+                                                                src="/github-icone.png"
+                                                                alt="git hub Gabriel" /></a>
+                                                        <a href="https://github.com/gudeaguiar" target="_blank"><StyledGitHub
+                                                                src="/github-icone.png"
+                                                                alt="git hub Gustavo" /></a>
+                                                        <a href="https://github.com/Hitz299" target="_blank"><StyledGitHub
+                                                                src="/github-icone.png"
+                                                                alt="git hub Nathan" /></a>
+                                                </StyledListaGitHub>
+                                        </nav>
+                                </StyledCentraliza>
                         </StyledIntegrantesInfo>
 
 

@@ -120,8 +120,9 @@ export const StyledListaGitHub = styled.footer`
 
   display: grid;
   grid-template-columns: 30vw 30vw 30vw;
-    justify-items: center;
+  justify-content: center;
     gap: 3vh;
+    align-items: center;
 
 `
 
