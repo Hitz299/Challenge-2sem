@@ -5,10 +5,9 @@ import styled from 'styled-components';
 export const StyledCadastrarVeiculosContainer = styled.div`
 
   display: grid;
-  grid-template-columns: 30vw 30vw;
+  grid-template-columns: 40vw 40vw;
   grid-template-rows: 20vh 20vh 20vh;
-  gap: 3vh 15vw;
-  background-color: aliceblue;
+  gap: 3vh 10vw;
 
    @media screen and (max-width: 981px) {
   
