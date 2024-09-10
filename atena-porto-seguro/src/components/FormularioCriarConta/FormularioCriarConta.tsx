@@ -9,17 +9,17 @@ export default function FormularioCriarConta() {
         <StyledContainerEntrada>
 
           <label htmlFor="nome">Nome</label>
-          <StyledInput name="nome" type="text" placeholder="Informe seu Nome" />
+          <StyledInput id="nome" name="nome" type="text" placeholder="Informe seu Nome" />
         </StyledContainerEntrada>
         <StyledContainerEntrada>
 
-          <label htmlFor="email">Email</label>
-          <StyledInput name="email" type="email" placeholder="Informe seu Email" />
+          <label htmlFor="emailCC">Email</label>
+          <StyledInput id="emailCC" name="email" type="email" placeholder="Informe seu Email" />
         </StyledContainerEntrada>
         <StyledContainerEntrada>
 
-          <label htmlFor="senha">Senha</label>
-          <StyledInput name="senha" type="password" placeholder="Crie uma senha forte" />
+          <label htmlFor="senhaCC">Senha</label>
+          <StyledInput id="senhaCC" name="senha" type="password" placeholder="Crie uma senha forte" />
         </StyledContainerEntrada>
 
       </form>

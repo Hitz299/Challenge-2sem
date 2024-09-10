@@ -10,8 +10,8 @@ export default function FormularioEsqueciSenha() {
     <>
       <StyledContainerEntrada>
         <StyledParagrafoCadastro />
-        <label htmlFor="email">Email</label>
-        <StyledInput name="email" type="email" placeholder="Informe seu Email" />
+        <label htmlFor="emailE">Email</label>
+        <StyledInput id="emailE" name="email" type="email" placeholder="Informe seu Email" />
       </StyledContainerEntrada>
     </>
   )
