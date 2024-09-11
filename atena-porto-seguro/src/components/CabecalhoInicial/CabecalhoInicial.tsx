@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { StyledCabecalhoVerde, StylediconePerfil, StyledLogoPorto } from "../../style/style-tela-inicial";
 
 interface CabecalhoInicialProps {
@@ -5,13 +6,21 @@ interface CabecalhoInicialProps {
 }
 
 export default function CabecalhoInicial({ titulo }: CabecalhoInicialProps) {
+
+    const navigate = useNavigate();
+
+    const irConfigPerfil = () => 
+    {
+      navigate("./minha/conta");
+    }
+
   return (
     <>
 
       <StyledCabecalhoVerde>
         <h1>{titulo}</h1>
         <StyledLogoPorto src="/logo-portoseguro.webp" alt="Logo da Porto Seguro" />
-        <StylediconePerfil />
+        <StylediconePerfil onClick={irConfigPerfil}/>
       </StyledCabecalhoVerde>
 
     </>
