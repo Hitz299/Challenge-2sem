@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import BgGradient from "../../components/BgGradient/BgGradient";
 import Button from "../../components/Button/Button";
 import CabecalhoAzul from "../../components/CabecalhoAzul/CabecalhoAzul";
@@ -9,6 +10,12 @@ export default function Login() {
 
   document.title = "Login";
 
+  const navigate = useNavigate();
+
+  const btnIntegrantes = () => {
+    navigate("/home", { replace: true } );
+  };
+
   return (
     <>
       <CabecalhoAzul titulo="Login" />
@@ -17,7 +24,7 @@ export default function Login() {
 
         <FormularioLogin />
 
-        <Button click={() => { }} titulo="Entrar" />
+        <Button click={btnIntegrantes} titulo="Entrar" />
 
         <RodapeCadastro link1="./recuperar/senha" link2="./criar/conta"
           nomeLink1="Esqueci minha senha" nomeLink2="Criar Conta" />
