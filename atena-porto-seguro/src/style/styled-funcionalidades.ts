@@ -4,21 +4,45 @@ import styled from 'styled-components';
 
 export const StyledCadastrarVeiculosContainer = styled.div`
 
-  display: grid;
-  grid-template-columns: 40vw 40vw;
-  grid-template-rows: 20vh 20vh 20vh;
-  gap: 3vh 10vw;
+ 
+
+    @media screen and (max-width: 4400px) {
+       display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 20vh 20vh 20vh;
+        gap: 3vh 10vw;
+    }
 
    @media screen and (max-width: 981px) {
   
-    grid-template-columns: 50vw;
-    
+       grid-template-columns: 90vw;
+        grid-template-rows: 10vh;
+    gap: 1.1vh;
+
+
+    & input{
+      width: 70vw !important;
+      height: 0.9em;
+      font-size: 90%;
+      padding: 3%;
+      
+    }
   }
 
 
 `
 
 
+export const StyledJanela = styled.dialog`
+
+  
+  margin: 0 auto;
+  width: 20%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 20vh;
+
+`;
 
 
 
