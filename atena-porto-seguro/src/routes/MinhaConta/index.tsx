@@ -1,5 +1,6 @@
 import BgGradient from "../../components/BgGradient/BgGradient";
 import CabecalhoAzul from "../../components/CabecalhoAzul/CabecalhoAzul";
+import InfoConta from "../../components/InfoConta/InfoConta";
 
 export default function MinhaConta() {
 
@@ -10,7 +11,7 @@ export default function MinhaConta() {
        <CabecalhoAzul titulo="Configurar Perfil" />
       <BgGradient>
         
-        <span>a</span>
+        <InfoConta/>
 
       </BgGradient>
   

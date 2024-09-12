@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledContaContainer = styled.div`
-    margin-top: 6vh;
-    & h2 {
-    text-align: center;
-    margin-bottom: 5vh;
-    }
-`;
 
 export const StyledConta = styled.div`
     
@@ -38,16 +31,21 @@ export const StyledInput = styled.input`
   }
     `;
 
-export const StyledButtonConta = styled.button`
+export const StyledContainerInfoConta = styled.div`
 
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-inline-start: 20vw;
-    margin-right: 24vw;       
-`;
+    width: 20vw;
+    height: 8vh;
+    border: 1em solid #F23064;
+    background-color: #262626;
 
+`
+
+export const StyledContainerDadosConta = styled.div`
+
+    width: 22vw;
+    height: 12vh;
+
+`
 
 
 
