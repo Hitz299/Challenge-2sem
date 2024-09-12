@@ -76,7 +76,6 @@ export const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
 
-
   &:hover {
     transition: 0.4s ease-in;
     background-color: #68ee86;
@@ -86,19 +85,20 @@ export const StyledButton = styled.button`
   @media screen and (max-width: 4400px) {
      height: 50px;
      width: 180px;
-     font-size: 1.5em;
+    font-size: 100%;
+
   }
 
   @media screen and (max-width: 981px) {
     height: 50px;
     width: 110px;
-    font-size: 30px;
+    font-size: 90%;
   }
 
   @media screen and (max-width: 741px) {
      height: 40px;
      width: 100px;
-     font-size: 14px;
+    font-size: 80%;
   }
 `
 

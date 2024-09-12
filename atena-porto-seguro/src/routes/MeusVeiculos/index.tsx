@@ -1,4 +1,6 @@
+import BgGradient from "../../components/BgGradient/BgGradient";
 import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
+import MeusVeiculosComponent from "../../components/MeusVeiculosComponent/MeusVeiculosComponent";
 
 
 export default function MeusVeiculos() {
@@ -9,7 +11,11 @@ export default function MeusVeiculos() {
     <>
         <CabecalhoVerde titulo="Meus Veículos"/>
     
-    
+        <BgGradient>
+        <MeusVeiculosComponent/>
+
+
+        </BgGradient>
     </>
   )
 }

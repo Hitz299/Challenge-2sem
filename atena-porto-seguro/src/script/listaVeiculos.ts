@@ -5,6 +5,7 @@ export const listaVeiculos = [
         cor: "azul",
         chassi: "1FTHX26G7LKA01234",
         marca: "Volkswagen",
+        img: "/fusca-azul.jpg"
     },
     {
         modelo: "Civic",
@@ -12,6 +13,7 @@ export const listaVeiculos = [
         cor: "preto",
         chassi: "2HGFC2F59FH701234",
         marca: "Honda",
+        img: "/civic-preto.png"
     },
     {
         modelo: "Hilux",
@@ -19,6 +21,7 @@ export const listaVeiculos = [
         cor: "prata",
         chassi: "3TMCZ5AN4HM123456",
         marca: "Toyota",
+        img: "/hilux-prata.png"
     },
     {
         modelo: "Onix",
@@ -26,9 +29,6 @@ export const listaVeiculos = [
         cor: "vermelho",
         chassi: "1G1BE5SM5J7134567",
         marca: "Chevrolet",
+        img: "/onix-vermelho.png"
     }
-];
-
-if(!localStorage.getItem("lista")){
-    localStorage.setItem("lista", JSON.stringify(listaVeiculos));
-} 
+]; 

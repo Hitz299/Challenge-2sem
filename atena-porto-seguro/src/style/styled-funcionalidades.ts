@@ -87,27 +87,6 @@ padding: 0.1em;
 color: #ffffff;
 `;
 
-export const StyledMeusVeiculosContainer = styled.div `
-    display: block;
-    background-color: #d4d4d4;
-    padding-top: 3vh;
-    height: 120vh;
-    width: 100vw;
-`;
-
-export const StyledVeiculosContainer = styled.div `
-    margin-top: 6vh;
-    display: grid;
-    height: 62vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30vh 30vh;
-    justify-items: center;
-    align-items: center;
-    column-gap: 1vw;
-    row-gap: 5vw;        
-    
-     
-`; 
 
 export const StyledUserInput = styled.input `
 
@@ -198,9 +177,77 @@ export const StyledLocalizar = styled.div `
 `;
 
 
-  
 
-       
+export const StyledVeiculo = styled.div `
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+    text-align: center;
+    background-color: #262626;
+    border-radius: 42px 42px 12px 12px;
+
+    &:hover{
+      transition: all 0.25s ease-in;
+      transform: scale(1.3);
+    }
+`;
+
+
+
+export const StyledImgVeiculo = styled.img`
+width: 100%;
+border-radius: 42px 42px 0px 0px;
+`
+
+
+export const StyledAtributosVeiculo = styled.div `
+    display: grid;
+    grid-template-columns: 6vw 12vw;
+    color: aliceblue;
+    padding: 1.2%;
+    padding-left: 3.5%;
+`;
+
+export const StyledMeusVeiculosContainer = styled.div `
+    margin: 0 auto;
+    display: flex;
+     
+    width: 10vw;
+    padding: 10vh 10vw;
+    gap: 4vw;
+    margin-top: 6vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+`;
+
+
+export const StyledContainerAtributosEscritos = styled.div `
+   
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    text-align: start;
+    font-size: 80%;
+
+`   
     
+export const StyledContainerBtnsVeiculo = styled.div `
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+   & button{
+      transform: scale(0.7);
+      margin-top: 0vh 0vw!important;
+      margin: 1vh;
+      width: 5vw;
+      position: relative;
+      font-size: 100%;
+   }
+
+`
 
