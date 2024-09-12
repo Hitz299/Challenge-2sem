@@ -4,6 +4,7 @@ import InfoIntegrantes from "../../components/InfoIntegrantes/InfoIntegrantes";
 import IntegrantesTopo from "../../components/IntegrantesTopo/IntegrantesTopo";
 import RodapeIntegrantes from "../../components/RodapeIntegrantes/RodapeIntegrantes";
 
+
 export default function Integrantes() {
 
   document.title = "Integrantes";

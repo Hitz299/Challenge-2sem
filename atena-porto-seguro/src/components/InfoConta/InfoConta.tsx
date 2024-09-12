@@ -8,54 +8,54 @@ import { MdDriveFileRenameOutline} from "react-icons/md";
 
 export default function InfoConta() {
   return (
-    <>
+    <>  
     
         <StyledConta>
           
           <StyledContainerDadosConta>
-            <p>Nome:</p>
-            <StyledContainerInfoConta>
+            <legend>Nome: </legend>
+            <StyledContainerInfoConta largura={16}>
                 <p>Roberto</p>
                 <MdDriveFileRenameOutline/>
             </StyledContainerInfoConta>
           </StyledContainerDadosConta>
 
             <StyledContainerDadosConta>
-            <p>Data de nascimento:</p>
-            <StyledContainerInfoConta>
+            <legend>Data de nascimento: </legend>
+            <StyledContainerInfoConta largura={16}>
                 <p>11/10/2002</p>
                 <IoDocumentText />
             </StyledContainerInfoConta>
           </StyledContainerDadosConta>
 
             <StyledContainerDadosConta>
-            <p>Nome:</p>
-            <StyledContainerInfoConta>
-                <p>Nathan Magno</p>
+            <legend>Email vinculado: </legend>
+            <StyledContainerInfoConta largura={25}>
+                <p>robertin.da.zl@gmail.com</p>
                 <MdEmail />
             </StyledContainerInfoConta>
           </StyledContainerDadosConta>
 
             <StyledContainerDadosConta>
-            <p>Nome:</p>
-            <StyledContainerInfoConta>
-                <p>Nathan Magno</p>
+            <legend>CPF: </legend>
+            <StyledContainerInfoConta largura={16}>
+                <p>645.763.785-23</p>
                 <FaAddressCard/>
             </StyledContainerInfoConta>
           </StyledContainerDadosConta>
 
             <StyledContainerDadosConta>
-            <p>Nome:</p>
-            <StyledContainerInfoConta>
-                <p>Nathan Magno</p>
+            <legend>Celular: </legend>
+            <StyledContainerInfoConta largura={16}>
+                <p>11999999999</p>
                 <FaPhone />
             </StyledContainerInfoConta>
           </StyledContainerDadosConta>
 
             <StyledContainerDadosConta>
-            <p>Nome:</p>
-            <StyledContainerInfoConta>
-                <p>Nathan Magno</p>
+            <legend>Endereço: </legend>
+            <StyledContainerInfoConta largura={16}>
+                <p>Rua das alfaces 673</p>
                 <IoHomeSharp/>
             </StyledContainerInfoConta>
           </StyledContainerDadosConta>

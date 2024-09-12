@@ -1,17 +1,6 @@
 import styled from 'styled-components';
 
 
-export const StyledConta = styled.div`
-    
-    display: grid;
-    justify-items: center;
-    grid-auto-flow: column;
-    gap: 4vh;
-    align-items: center;
-    text-align: center;
-    height: 52vh;
-    `;
-
 export const StyledInput = styled.input`
 
     width: 40vw;
@@ -31,12 +20,40 @@ export const StyledInput = styled.input`
   }
     `;
 
-export const StyledContainerInfoConta = styled.div`
+interface StyledContainerInfoContaProps {
+    largura: number;
+}
 
-    width: 20vw;
-    height: 8vh;
-    border: 1em solid #F23064;
+export const StyledContainerInfoConta = styled.div<StyledContainerInfoContaProps>`
+
+    display: flex;
+    padding-inline: 1vw;
+    justify-content: space-between;
+    align-items: center;
+    width: ${(props) => props.largura}vw;
+    height: 6vh;
+    border: 3px solid #F23064;
     background-color: #262626;
+    border-radius: 12px;
+    color: white;
+
+
+
+    @media screen and (max-width: 4400px){
+    font-size: 1em;
+    }
+    
+     @media screen and (max-width: 981px){
+    font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 761px){
+    font-size: 0.65em;
+    }
+
+      @media screen and (max-width: 567px){
+    font-size: 0.5em;
+    }
 
 `
 
@@ -47,6 +64,20 @@ export const StyledContainerDadosConta = styled.div`
 
 `
 
+
+export const StyledConta = styled.div`
+    
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 10vh 10vh 10vh;
+    gap: 4vh;
+    text-align: start;
+    height: 52vh;
+    margin-top: 6vh;
+    color: white;
+
+    `;
 
 
 

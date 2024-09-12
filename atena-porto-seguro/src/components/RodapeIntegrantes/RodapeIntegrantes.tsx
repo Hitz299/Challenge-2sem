@@ -1,12 +1,11 @@
-import { MdCloud } from "react-icons/md";
-import { StyledRepositorioContainer, StyledRodapeIntegrantes } from "../../style/styled-cadastro";
-import { StyledLink } from "../../style/styledGeral";
-
-
+import { MdCloud } from "react-icons/md"
+import { StyledRepositorioContainer, StyledRodapeIntegrantes } from "../../style/styled-cadastro"
+import { StyledLink } from "../../style/styledGeral"
 
 export default function RodapeIntegrantes() {
 
-  const navegar = () => {
+
+ const navegar = () => {
     return (
       window.open("https://github.com/Hitz299/Challenge-2sem/tree/front", "_blank")
     )
@@ -39,3 +38,4 @@ export default function RodapeIntegrantes() {
     </>
   )
 }
+
