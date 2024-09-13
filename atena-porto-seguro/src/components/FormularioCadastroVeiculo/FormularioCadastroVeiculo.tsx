@@ -61,8 +61,7 @@ export default function FormularioCadastroVeiculo() {
      
             <h2>Veículo cadastrado com Sucesso</h2>
            
-       
-      </StyledJanela>
+          </StyledJanela>
          
               
         </StyledCadastrarVeiculosContainer>

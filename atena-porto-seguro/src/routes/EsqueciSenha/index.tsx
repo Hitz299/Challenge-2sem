@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import BgGradient from "../../components/BgGradient/BgGradient";
 import Button from "../../components/Button/Button";
 import CabecalhoAzul from "../../components/CabecalhoAzul/CabecalhoAzul";
@@ -9,6 +10,13 @@ export default function EsqueciSenha() {
     
     document.title = "Recuperar Senha";
 
+    const navigate = useNavigate();
+
+    const irRedefinirSenha = () => 
+    (
+      navigate("./redefinir/senha")
+    )
+
   return (
     <>
       <CabecalhoAzul titulo="Recuperar Senha"/> 
@@ -16,7 +24,7 @@ export default function EsqueciSenha() {
       <BgGradient>
 
           <FormularioEsqueciSenha/>
-          <Button click={() => {}} titulo="Enviar"/>
+          <Button click={irRedefinirSenha} titulo="Enviar"/>
             <RodapeVoltar link="/login"/>
       </BgGradient>
    </>

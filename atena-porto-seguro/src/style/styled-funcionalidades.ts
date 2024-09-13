@@ -34,14 +34,15 @@ export const StyledCadastrarVeiculosContainer = styled.div`
 
 
 export const StyledJanela = styled.dialog`
-
-  
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  width: 20%;
-  height: 30%;
+  width: 70%;
+  height: 60%;
   background: rgba(0, 0, 0, 0.4);
   margin-top: 20vh;
-
+  justify-content: center;
+  gap: 3vh;
 `;
 
 
