@@ -1,5 +1,5 @@
-import { MdCloud } from "react-icons/md"
-import { StyledRepositorioContainer, StyledRodapeIntegrantes } from "../../style/styled-cadastro"
+
+import { StyledCloud, StyledRepositorioContainer, StyledRodapeIntegrantes } from "../../style/styled-cadastro"
 import { StyledLink } from "../../style/styledGeral"
 
 export default function RodapeIntegrantes() {
@@ -24,7 +24,7 @@ export default function RodapeIntegrantes() {
 
           <p>Repositório Remoto</p>
 
-          <MdCloud />
+          <StyledCloud/>
         </StyledRepositorioContainer>
 
         <nav>

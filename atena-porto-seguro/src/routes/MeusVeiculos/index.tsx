@@ -13,8 +13,7 @@ export default function MeusVeiculos() {
     
         <BgMeusVeiculos>
         <MeusVeiculosComponent/>
-
-
+        
         </BgMeusVeiculos>
     </>
   )

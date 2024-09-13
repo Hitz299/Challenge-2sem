@@ -1,5 +1,6 @@
 import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
 import Localizar from "../../components/Localizar/Localizar";
+import RodapeLocalizarVeiculos from "../../components/RodapeLocalizarVeiculos/RodapeLocalizarVeiculos";
 
 export default function LocalizarVeiculos() {
 
@@ -12,7 +13,7 @@ export default function LocalizarVeiculos() {
 
       <Localizar>
 
-        <div></div>
+         <RodapeLocalizarVeiculos/>
 
       </Localizar>
     </>

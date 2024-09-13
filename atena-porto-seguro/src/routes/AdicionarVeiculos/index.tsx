@@ -10,19 +10,6 @@ export default function AdicionarVeiculos() {
 
     document.title = "Cadastrar Veículos";
 
-  //   const [icones, setIcones] = useState<JSX.Element[]>([]);
-
-  // const adicionarIcone = () => {
-  //   let index: number  = 0;
-  //   setIcones([...icones, <Button titulo="aaa" click={() => {}} key={index} />]);
-  //   index ++;
-  // };
-
-  // const DeletarIcone = () => {
-    
-  //   setIcones((icones) => icones.slice(0, -1));
- 
-  // };
 
   return (
     <>

@@ -318,3 +318,11 @@ export const StyledFundoMeusVeiculos = styled.div`
     height: 100%;
     position: fixed;
 `;
+
+export const StyledBtnLocalizarContainer = styled.div`
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+`

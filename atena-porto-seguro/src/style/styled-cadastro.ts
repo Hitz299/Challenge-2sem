@@ -1,5 +1,34 @@
 
 import styled from 'styled-components';
+import { MdCloud } from "react-icons/md"
+
+export const StyledCloud = styled(MdCloud)`
+
+color: rgb(153, 0, 255);
+
+   @media screen and (max-width: 4400px) {
+    width: 50px;
+    height: 50px;
+    
+  }
+
+    @media screen and (max-width: 1440px) {
+
+      width: 35px;
+      height: 35px;
+    
+
+    }
+
+    @media screen and (max-width: 761px) {
+ 
+     width: 18px;
+     height: 18px;
+    
+
+  }
+
+`
 
 export const StyledCabecalhoAzul = styled.header`
     display: flex;
@@ -63,11 +92,11 @@ export const StyledRepositorioContainer = styled.div`
     margin-bottom: 6vh;
     width: 28vw;
     cursor: pointer;
-
+    padding: 0.2vh 1vw;
     &:hover
     {
       transition: all 0.2s ease-in-out;
-      background-color: #CECECE76;
+      background-color: #262626;
     }
 
     & p{
@@ -77,28 +106,25 @@ export const StyledRepositorioContainer = styled.div`
     }
 
     @media screen and (max-width: 4400px) {
-    font-size: 2vw;
+    font-size: 120%;
 
-    & img {
-      width: 5vw;
-    }
   }
 
     @media screen and (max-width: 1440px) {
 
-    font-size: 1.5vw;
+    font-size: 90%;
 
-    & img {
-      width: 4vw;
-    }
 
     @media screen and (max-width: 761px) {
  
-    font-size: 1vw;
+    font-size: 70%;
 
-    & img {
-      width: 3vw;
-    }
+  }
+
+    @media screen and (max-width: 567px) {
+ 
+    font-size: 50%;
+
   }
   }
 
@@ -162,6 +188,7 @@ export const StyledImgIntegrante = styled.img<ImgIntegranteProps>`
 
 export const StyledGitHub = styled.img`
 
-  width: 12%
+  width: 12%;
 
 `
+

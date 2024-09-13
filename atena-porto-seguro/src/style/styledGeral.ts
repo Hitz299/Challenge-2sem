@@ -131,7 +131,19 @@ export const StyledCentraliza = styled.div`
 margin: 0 auto;
 display: block;
 position: relative;
+text-align: center;
+justify-content: center;
+align-items: center;
 `;
+
+
+export const StyledTexto = styled.p`
+
+font-size: 100%;
+color: black;
+text-shadow: 2cqb;
+margin: 8vh;
+`
 
 export const StyledLinkExterno = styled.a`
   text-decoration: none;
