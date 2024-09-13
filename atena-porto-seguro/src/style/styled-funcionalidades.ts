@@ -197,7 +197,6 @@ export const StyledVeiculo = styled.div `
 
 export const StyledImgVeiculo = styled.img`
 width: 100%;
-height: 35vh;
 border-radius: 42px 42px 0px 0px;
 `
 
@@ -210,7 +209,7 @@ export const StyledAtributosVeiculo = styled.div `
 
     @media screen and (max-width: 4400px) {
   
-    grid-template-columns: 12.5vw 25vw;
+    grid-template-columns: 12.5vw 20vw;
 
   }
 
@@ -229,7 +228,7 @@ export const StyledMeusVeiculosContainer = styled.div `
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 260vh;
+    height: 290vh;
     padding: 10vh 10vw;
     gap: 14vh;
     justify-content: start;

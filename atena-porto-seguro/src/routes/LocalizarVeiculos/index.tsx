@@ -1,9 +1,14 @@
+import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
 
 export default function LocalizarVeiculos() {
 
     document.title = "Localizar Veículo";
 
   return (
-    <div>index</div>
+    <>
+    
+      <CabecalhoVerde titulo="Localizar veículos"/>
+    
+    </>
   )
 }
