@@ -188,8 +188,8 @@ export const StyledVeiculo = styled.div `
     border-radius: 42px 42px 12px 12px;
 
     &:hover{
-      transition: all 0.25s ease-in;
-      transform: scale(1.3);
+      transition: all 0.15s ease-out;
+      transform: scale(1.2);
     }
 `;
 
@@ -197,30 +197,46 @@ export const StyledVeiculo = styled.div `
 
 export const StyledImgVeiculo = styled.img`
 width: 100%;
+height: 35vh;
 border-radius: 42px 42px 0px 0px;
 `
 
 
 export const StyledAtributosVeiculo = styled.div `
     display: grid;
-    grid-template-columns: 6vw 12vw;
     color: aliceblue;
     padding: 1.2%;
     padding-left: 3.5%;
+
+    @media screen and (max-width: 4400px) {
+  
+    grid-template-columns: 12.5vw 25vw;
+
+  }
+
+  @media screen and (max-width: 981px) {
+   grid-template-columns: 20vw 30vw;
+  }
+
+    @media screen and (max-width: 541px) {
+   grid-template-columns: 40vw 40vw;
+  }
+  
 `;
 
 export const StyledMeusVeiculosContainer = styled.div `
-    margin: 0 auto;
+    margin: 2vh 20vw;
     display: flex;
-     
-    width: 10vw;
+    flex-direction: column;
+    width: 30vw;
+    height: 260vh;
     padding: 10vh 10vw;
-    gap: 4vw;
-    margin-top: 6vh;
-    justify-content: center;
+    gap: 14vh;
+    justify-content: start;
     align-items: center;
     position: relative;
     text-align: center;
+
 `;
 
 
@@ -228,10 +244,30 @@ export const StyledContainerAtributosEscritos = styled.div `
    
     display: flex;
     flex-direction: column;
-    gap: 1vh;
     text-align: start;
+
+    
+  @media screen and (max-width: 4400px) {
+     height: 50px;
+     width: 180px;
+    gap: 1vh;
     font-size: 80%;
 
+  }
+
+  @media screen and (max-width: 981px) {
+    height: 90px;
+    width: 110px;
+    font-size: 60%;
+    gap: 3vh;
+  }
+
+  @media screen and (max-width: 741px) {
+     height: 100px;
+     width: 120px;
+     gap: 4vh;
+    font-size: 55%;
+  }
 `   
     
 export const StyledContainerBtnsVeiculo = styled.div `
@@ -239,15 +275,47 @@ export const StyledContainerBtnsVeiculo = styled.div `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
    & button{
-      transform: scale(0.7);
+      transform: scale(0.8);
       margin-top: 0vh 0vw!important;
       margin: 1vh;
-      width: 5vw;
       position: relative;
       font-size: 100%;
-   }
+
+      
+  @media screen and (max-width: 4400px) {
+     width: 10vw;
+
+  }
+
+  @media screen and (max-width: 1440px) {
+    width: 110px;
+
+  }
+
+  @media screen and (max-width: 741px) {
+
+     width: 100px;
+ 
+  }
+      
+      
+         }
 
 `
 
+export const StyledFundoMeusVeiculos = styled.div`
+    display: flex;
+    background-color: #101010;
+    text-align: center;
+    justify-content: center;
+    align-content: start;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+`;
