@@ -1,4 +1,5 @@
 import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
+import Localizar from "../../components/Localizar/Localizar";
 
 export default function LocalizarVeiculos() {
 
@@ -8,7 +9,12 @@ export default function LocalizarVeiculos() {
     <>
     
       <CabecalhoVerde titulo="Localizar veículos"/>
-    
+
+      <Localizar>
+
+        <div></div>
+
+      </Localizar>
     </>
   )
 }

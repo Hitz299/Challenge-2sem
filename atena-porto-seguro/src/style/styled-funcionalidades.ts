@@ -164,7 +164,7 @@ export const StyledInfoVeiculo = styled.div `
 `;
 
 export const StyledLocalizar = styled.div `
-    background-image: url("/public/teste_maps.png");
+    background-image: url("/teste-maps.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
