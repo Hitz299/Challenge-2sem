@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef } from "react";
 import { StyledInput } from "../../style/styled-conta";
 import { StyledCadastrarVeiculosContainer, StyledJanela } from "../../style/styled-funcionalidades";
 import { StyledContainerEntrada } from "../../style/styledGeral";
@@ -7,15 +7,18 @@ import Button from "../Button/Button";
 
 export default function FormularioCadastroVeiculo() {
 
-    const [janela, setJanela] = useState<boolean>(false)
                          
+    const janelaRef = useRef<HTMLDialogElement>(null);
 
    const abrirJanela = () => {
-        setJanela(true);
-        setTimeout(() => {
-          setJanela(false);
-        }, 2200);
-    };
+    
+        janelaRef.current?.showModal();
+   };
+
+    const fecharJanela = () => {
+    
+        janelaRef.current?.close();
+   };
 
 
   return (
@@ -25,6 +28,14 @@ export default function FormularioCadastroVeiculo() {
     <form action="#">
 
         <StyledCadastrarVeiculosContainer>
+          
+          <StyledJanela ref={janelaRef}>
+     
+            <h2>Veículo cadastrado com Sucesso</h2>
+
+            <Button titulo="Ok" click={fecharJanela}/>
+           
+          </StyledJanela>
 
             <StyledContainerEntrada>
               <label htmlFor="chassi">Chassi</label>
@@ -52,17 +63,11 @@ export default function FormularioCadastroVeiculo() {
                     <StyledInput id="cor" name="cor" type="text" placeholder="Informe a cor" />
                 </StyledContainerEntrada>
 
-                <Button titulo="Cadastrar" click={abrirJanela}/>
 
 
 
-          
-          <StyledJanela open={janela}>
-     
-            <h2>Veículo cadastrado com Sucesso</h2>
-           
-          </StyledJanela>
          
+                <Button titulo="Cadastrar" click={abrirJanela}/>
               
         </StyledCadastrarVeiculosContainer>
 

@@ -34,13 +34,14 @@ export const StyledCadastrarVeiculosContainer = styled.div`
 
 
 export const StyledJanela = styled.dialog`
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  width: 70%;
-  height: 60%;
-  background: rgba(0, 0, 0, 0.4);
+  width: 30vw;
+  height: 30vh;
+  border-radius: 12px;
+  background: black;
   margin-top: 20vh;
+  align-items: center;
+  padding: 20px;
   justify-content: center;
   gap: 3vh;
 `;
@@ -210,7 +211,7 @@ export const StyledAtributosVeiculo = styled.div `
 
     @media screen and (max-width: 4400px) {
   
-    grid-template-columns: 12.5vw 20vw;
+    grid-template-columns: 12.5vw 25vw;
 
   }
 
@@ -229,13 +230,22 @@ export const StyledMeusVeiculosContainer = styled.div `
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 290vh;
+    
     padding: 10vh 10vw;
     gap: 14vh;
     justify-content: start;
     align-items: center;
     position: relative;
     text-align: center;
+
+     @media screen and (max-width: 4400px) {
+   
+      height: 310vh;
+  }
+
+  @media screen and (max-width: 761px) {
+   height: 245vh;
+  }
 
 `;
 
