@@ -21,6 +21,9 @@ def erro_entrada(entrada, qtdAlternativas):
     except ValueError as texto:
         print(f"Insira apenas valores numéricos! - {texto}")
         erro_entrada(entrada, qtdAlternativas)
+    except:
+        print(f"Algum errou ocorreu durante a execução do código")
+        erro_entrada(entrada, qtdAlternativas)
     finally:
         return entrada
 
@@ -67,6 +70,9 @@ def entrada_valor_numerico():
         entrada = int(input(f"\n"))
     except ValueError as texto:
         print(f"Insira apenas valores numéricos! - {texto}")
+        entrada = entrada_valor_numerico()
+    except:
+        print(f"Algum errou ocorreu durante a execução do código")
         entrada = entrada_valor_numerico()
     finally:
         return entrada
@@ -236,7 +242,7 @@ if escolha == 1:
             while senhaRedefinida == False:
                 senha_nova = valida_senha()
                 if (senha_nova == senha_criar_conta):
-                    print(f"Sua nova senha não pode ser igual sua senha atual")
+                    print(f"\nSua nova senha não pode ser igual sua senha atual")
                 else:
                     senha_criar_conta = senha_nova
                     senhaRedefinida = True
