@@ -14,7 +14,7 @@ export default function InfoConta() {
           
           <StyledContainerDadosConta>
             <legend>Nome: </legend>
-            <StyledContainerInfoConta largura={16}>
+            <StyledContainerInfoConta largura={20}>
                 <p>Roberto</p>
                 <MdDriveFileRenameOutline/>
             </StyledContainerInfoConta>
@@ -54,7 +54,7 @@ export default function InfoConta() {
 
             <StyledContainerDadosConta>
             <legend>Endereço: </legend>
-            <StyledContainerInfoConta largura={16}>
+            <StyledContainerInfoConta largura={20}>
                 <p>Rua das alfaces 673</p>
                 <IoHomeSharp/>
             </StyledContainerInfoConta>

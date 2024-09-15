@@ -47,6 +47,7 @@ export const StyledJanela = styled.dialog`
   & input{
     width: 90% !important;
     height: 5vh;
+    font-size: 90%;
   }
   & button{
   margin: 2vh auto;
@@ -100,7 +101,6 @@ width: 60vw;
 margin: 1.6vw auto;
 padding: 15px;
 border-radius: 5px;
-font-size: 1vw;
 
 `;
 
