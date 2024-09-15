@@ -35,15 +35,40 @@ export const StyledCadastrarVeiculosContainer = styled.div`
 
 export const StyledJanela = styled.dialog`
   margin: 0 auto;
-  width: 30vw;
-  height: 30vh;
   border-radius: 12px;
-  background: black;
+  background: #151515;
   margin-top: 20vh;
   align-items: center;
-  padding: 20px;
+  text-align: center;
   justify-content: center;
+  padding: 20px;
   gap: 3vh;
+
+  & input{
+    width: 90% !important;
+    height: 5vh;
+  }
+  & button{
+  margin: 2vh auto;
+    
+  }
+
+@media screen and (max-width: 4400px) {
+      width: 30vw;
+      height: 25vh;
+  }
+
+  @media screen and (max-width: 834px) {
+      width: 70vw;
+      height: 25vh;
+  }
+
+  
+    @media screen and (max-width: 480px) {
+     width: 80vw;
+      height: 30vh;
+  }
+
 `;
 
 

@@ -1,7 +1,7 @@
 import BgGradient from "../../components/BgGradient/BgGradient";
-import Button from "../../components/Button/Button";
 import CabecalhoVerde from "../../components/CabecalhoVerde/CabecalhoVerde";
-import { StyledChatBox, StyledChatContainer, StyledContainerMensagem, StyledUserInput } from "../../style/styled-funcionalidades";
+import InteracaoChatBot from "../../components/InteracaoChatBot/InteracaoChatBot";
+
 
 
 export default function ChatBot() {
@@ -14,21 +14,7 @@ export default function ChatBot() {
     
       <BgGradient>
 
-        <StyledChatContainer>
-
-            <StyledChatBox></StyledChatBox>
-
-          <StyledContainerMensagem>
-           
-            <StyledUserInput placeholder="Informe sua dúvida"
-            type="text" name="mensagem"/>
-
-          
-            <Button titulo="Enviar" click={() => {console.log("teste")}}/>
-        
-          </StyledContainerMensagem>
-
-        </StyledChatContainer>
+        <InteracaoChatBot/>
 
       </BgGradient>
     

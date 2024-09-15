@@ -1,14 +1,16 @@
 import {  useState } from "react";
 import { StyledInput } from "../../style/styled-conta";
 import { StyledCadastrarVeiculosContainer, StyledJanela } from "../../style/styled-funcionalidades";
-import { StyledContainerEntrada } from "../../style/styledGeral";
+import { StyledContainerEntrada, StyledTituloModal } from "../../style/styledGeral";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 
 export default function FormularioCadastroVeiculo() {
 
                          
     const [janelaCV, setCV] = useState<boolean>(false);
+    const navigate = useNavigate();
 
    const abrirJanela = () => {
       setCV(true);
@@ -16,6 +18,7 @@ export default function FormularioCadastroVeiculo() {
 
     const fecharJanela = () => {
         setCV(false);
+        navigate("/home")
    };
 
 
@@ -29,7 +32,7 @@ export default function FormularioCadastroVeiculo() {
           
           <StyledJanela open={janelaCV}>
      
-            <h2>Veículo cadastrado com Sucesso</h2>
+            <StyledTituloModal>Veículo cadastrado com Sucesso</StyledTituloModal>
 
             <Button titulo="Ok" click={fecharJanela}/>
            

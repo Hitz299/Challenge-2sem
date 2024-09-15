@@ -9,7 +9,7 @@ export const StyledInput = styled.input`
     justify-items: center;
     padding: 0.6em 1.2em;
     font-size: 1.6em;
-    border-radius: 32px;
+    border-radius: 0.6em;
     background-color: #cececea1;
     margin-top: 1vh;
 

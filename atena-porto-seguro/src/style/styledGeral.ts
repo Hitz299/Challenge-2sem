@@ -69,18 +69,18 @@ export const StyledButton = styled.button`
   padding: 0.2vw;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
-  border-radius: 2em;
+  border-radius: 1em;
   border-color: #fdfdfdec;
   border-style: solid;
   cursor: pointer;
-  margin: 8vh auto;
+  margin: 5vh auto;
   justify-content: center;
   align-items: center;
 
   &:hover {
-    transition: 0.4s ease-in;
-    background-color: #68ee86;
-    color: black;
+    transition: 0.15s ease-in;
+    background-color: #262626;
+    color: #68ee86;
   }
 
   @media screen and (max-width: 4400px) {
@@ -131,6 +131,7 @@ export const StyledCentraliza = styled.div`
 margin: 0 auto;
 display: block;
 position: relative;
+padding:1vw;
 text-align: center;
 justify-content: center;
 align-items: center;
@@ -150,3 +151,20 @@ export const StyledLinkExterno = styled.a`
   display: inline;
 
 `;
+
+
+export const StyledTituloModal = styled.h2`
+
+display: inline;
+width: 1em;
+color: white;
+
+@media screen and (max-width: 4400px) {
+     font-size: 18px;
+  }
+
+  @media screen and (max-width: 834px) {
+     font-size: 12px;
+  }
+
+`
