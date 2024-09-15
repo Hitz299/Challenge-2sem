@@ -52,8 +52,8 @@ def valida_senha():
     while valido == False:
         temNumero = any(char.isdigit() for char in senha)
         temLetra = any(char.isalpha() for char in senha)
-        tamanho = len(senha) > 8
-        if temLetra == True and temNumero == True and tamanho == True:
+        tamanho = len(senha) >= 8
+        if temLetra and temNumero and tamanho:
             valido = True
         else:
             print(f"Sua senha não cumpre os requisitos necessários!" +
