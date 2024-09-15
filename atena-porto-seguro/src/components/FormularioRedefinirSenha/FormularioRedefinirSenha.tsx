@@ -37,7 +37,7 @@ export default function FormularioRedefinirSenha() {
       </StyledJanela>
     <form>
 
-    <StyledInput name="email" type="email" placeholder="Informe seu Email"/>
+    <StyledInput name="codigo" type="number" placeholder="Insira o código"/>
   </form>
     <Button titulo="Enviar" click={enviarEmail}/>
     </>

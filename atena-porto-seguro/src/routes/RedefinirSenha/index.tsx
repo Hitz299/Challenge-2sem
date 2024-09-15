@@ -14,8 +14,7 @@ export default function RedefinirSenha() {
       <CabecalhoAzul titulo="Redefinir senha"/>
 
       <BgGradient>
-        <TextoInformativo texto="Informe o email vinculado a sua conta 
-        para enviarmos o código de verificação"/>
+        <TextoInformativo texto="Informe o código de recuperação que foi enviado ao seu email vincúlado"/>
         <FormularioRedefinirSenha/>
         <RodapeVoltar link="/login"/>
         </BgGradient>
