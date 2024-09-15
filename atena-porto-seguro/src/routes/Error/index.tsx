@@ -1,4 +1,4 @@
-import { StyledContainerNotFound, StyledImgNotFound } from "../../style/style-erro404";
+import NotFound from "../../components/NotFound/NotFound";
 
 
 
@@ -9,11 +9,7 @@ export default function Error() {
   return (
 
     <>
-      <StyledContainerNotFound>
-        <figure>
-          <StyledImgNotFound src="/404.png" alt="Erro 404, Página não encontrada" />
-        </figure>
-      </StyledContainerNotFound>
+      <NotFound/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import {  useState } from "react";
 import { StyledInput } from "../../style/styled-conta";
 import { StyledCadastrarVeiculosContainer, StyledJanela } from "../../style/styled-funcionalidades";
 import { StyledContainerEntrada } from "../../style/styledGeral";
@@ -8,16 +8,14 @@ import Button from "../Button/Button";
 export default function FormularioCadastroVeiculo() {
 
                          
-    const janelaRef = useRef<HTMLDialogElement>(null);
+    const [janelaCV, setCV] = useState<boolean>(false);
 
    const abrirJanela = () => {
-    
-        janelaRef.current?.showModal();
+      setCV(true);
    };
 
     const fecharJanela = () => {
-    
-        janelaRef.current?.close();
+        setCV(false);
    };
 
 
@@ -25,11 +23,11 @@ export default function FormularioCadastroVeiculo() {
   
     <>
 
-    <form action="#">
+    <form>
 
         <StyledCadastrarVeiculosContainer>
           
-          <StyledJanela ref={janelaRef}>
+          <StyledJanela open={janelaCV}>
      
             <h2>Veículo cadastrado com Sucesso</h2>
 
@@ -67,13 +65,13 @@ export default function FormularioCadastroVeiculo() {
 
 
          
-                <Button titulo="Cadastrar" click={abrirJanela}/>
               
         </StyledCadastrarVeiculosContainer>
 
 
     </form>
 
+                <Button titulo="Cadastrar" click={abrirJanela}/>
      </>
   )
 }
