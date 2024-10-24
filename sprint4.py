@@ -12,6 +12,9 @@ import requests
 # Para casos em que o usuário terá que realizar uma escolha no menu interativo e o mesmo digitar uma
 # entrada inválida
 
+def exportar_json():
+    pass
+
 def  conecta_db():
     try:
         connection = oracledb.connect("rm558987/111204@oracle.fiap.com.br:1521/ORCL")
@@ -19,6 +22,54 @@ def  conecta_db():
     except Exception as e:
         return f"Erro ao conectar ao banco de dados: {e}"
 
+# Para o usuário ter acesso a informações de um veículo específico e ter acesso a manipulações desse veículo, ou seja, poder acessar o método update e delete
+def get_veiculo_especifico():
+    
+    print(f"\nInforme o chassi do veículo que você deseja visuzalizar:\n\n")
+    
+    chassi = entrada_valor()
+    
+    connection = conecta_db()
+    cursor = connection.cursor()
+    
+    try:
+        sql = f"SELECT * FROM tbl_veiculos WHERE chassi = '{chassi}'"
+        cursor.execute(sql)
+        
+        print(cursor.fetchone())
+        
+    except Exception as e:
+        print(f"Erro ao consultar veículo: {e}")
+        
+    finally:
+        print(f"Você deseja editar este veículo?\n1 - Sim\t2 - Não")
+        cursor.close()
+        
+        escolha = entrada_valor_numerico()
+        escolha = erro_entrada(escolha, 2)
+        
+        if (escolha == 1):
+            editar_veiculo(chassi)
+        
+        else: 
+            menu()
+        
+         
+    
+# Possibilita o usuário de Editar ou Excluir um veículo, utilizando outros dois métodos do CRUD (Update e Delete)
+def editar_veiculo(chassi):
+    print(f"Aqui você pode editar as informações do seu veículo ou excluir seu veículo.\n1 - Editar\t2 - Excluir")
+    
+    escolha = entrada_valor_numerico()
+    escolha = erro_entrada(escolha, 2)
+        
+    if (escolha == 1):
+        update_veiculo(chassi)
+        
+    else: 
+        delete_veiculo(chassi)
+
+# Para obter todos os veículos armazenados
 def get_veiculo():
     
     connection = conecta_db()
@@ -35,8 +86,20 @@ def get_veiculo():
         print(f"Erro ao consultar veículo: {e}")
          
     finally:
+        print(f"Você deseja exportar as informações obtidas para um arquivo json?\n1 - Sim\t2 - Não")
+        
+        escolha = entrada_valor_numerico()
+        escolha = erro_entrada(escolha, 2)
+        
+        if (escolha == 1):
+            exportar_json()
+        
+        else: 
+            pass
+
         cursor.close()
 
+# Método POST do CRUD
 def insert_veiculo():
     
     connection = conecta_db()
@@ -56,12 +119,73 @@ def insert_veiculo():
         
         cursor.execute(sql)
         connection.commit()
-        print("Veículo inserido com sucesso!")
         
     except Exception as e:
         print(f"Erro ao inserir veículo: {e}")
     finally:
+        print("Veículo inserido com sucesso!")
         cursor.close()
+        
+# Método PUT do CRUD
+def update_veiculo(chassi):
+    
+    connection = conecta_db()
+    cursor = connection.cursor()
+ 
+    chassi_novo = input("Informe o chassi: ")
+    placa = input("Informe a placa: ")
+    cor = input("Informe a cor: ")
+    motor = input("Informe o motor: ")
+    marca = input("Informe a marca: ")
+    modelo = input("Informe o modelo: ")
+    
+    try:
+        sql = f"UPDATE tbl_veiculos SET chassi = '{chassi_novo}', placa = '{placa}', cor = '{cor}',  motor = '{motor}', marca = '{marca}',  modelo = '{modelo}' WHERE chassi = '{chassi}'"
+        cursor.execute(sql)
+    
+        connection.commit()
+  
+    except Exception as e:
+        print(f"Erro ao atualizar veículo: {e}")
+        
+    finally:
+        print(f"\nVeículo atualizado com sucesso\n")
+        cursor.close()
+       
+  
+# Método DELETE do CRUD
+def delete_veiculo(chassi):
+    
+    connection = conecta_db()
+    cursor = connection.cursor()
+ 
+    try:
+        
+        sql = f"DELETE FROM tbl_veiculos WHERE chassi =  '{chassi}'"
+        
+        cursor.execute(sql)
+        connection.commit()
+        
+    except Exception as e:
+        print(f"Erro ao deletar veículo: {e}")
+    finally:
+        print("Veículo excluído com sucesso!")
+        cursor.close()
+    
+    
+# Após o usuário visualizar todos os veículos que ele possui, o sistema o dá a escolha de visualizar e posteriormente manipular algum veículo em específico
+def escolha_funcionalidade():
+    
+    print(f"Você deseja vizualizar algum veículo em específico?\n1 - Sim\t2 - Não")
+    
+    escolha = entrada_valor_numerico()
+    escolha = erro_entrada(escolha, 2)
+        
+    if (escolha == 1):
+        get_veiculo_especifico()
+        
+    else: 
+        menu()
 
 
 def erro_entrada(entrada, qtdAlternativas):
@@ -128,7 +252,7 @@ def entrada_valor_numerico():
         print(f"Insira apenas valores numéricos! - {texto}")
         entrada = entrada_valor_numerico()
     except:
-        print(f"Algum errou ocorreu durante a execução do código")
+        print(f"Algum erro ocorreu durante a execução do código")
         entrada = entrada_valor_numerico()
     finally:
         return entrada
@@ -140,6 +264,7 @@ def menu():
     print(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
                 +f"2 - Acessar informações dos veículos que ele já possui\n")
+    
     escolha = entrada_valor_numerico()
     escolha = erro_entrada(escolha, 2)
     return escolha
@@ -153,16 +278,13 @@ def funcionalidades(escolha):
         # Funcionalidades 2 e 3
         case 2:
            
-           
             get_veiculo()
 
+            escolha_funcionalidade()
 
-            '''
-            DESENVOLVER MÉTODO PARA VISUALIZAR VEÍCULOS SEPARADAMENTE
-            '''
             print(f"Qual serviço você gostaria de acessar para seu veículo?\n"
                                 +f"1 -> Localizar veículo\n"
-                                +f"2 -> Inspecionar erros do veículo\n\n")
+                                +f"2 -> Inspecionar erros do veículo\n")
 
             escolha = entrada_valor_numerico()
 
@@ -338,5 +460,7 @@ while sair == False:
     escolha = erro_entrada(escolha, 2)
     
     if escolha == 2:
+        connection = conecta_db()
+        connection.close()
         print("Até a próxima!")
         sair = True
