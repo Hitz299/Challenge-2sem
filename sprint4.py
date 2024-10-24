@@ -1,5 +1,9 @@
-import time;
-import random;
+import time
+import random
+import oracledb
+import requests
+
+
 # Foi importada a biblioteca "time" para permitir execução de códigos que envolvam manipulação
 # de tempo, como fazer o usuário esperar para realizar novas tentativas de login.
 # a Biblioteca random foi importada para permitir algumas simulações de cenários reais, como por exemplo,
@@ -7,6 +11,58 @@ import random;
 
 # Para casos em que o usuário terá que realizar uma escolha no menu interativo e o mesmo digitar uma
 # entrada inválida
+
+def  conecta_db():
+    try:
+        connection = oracledb.connect("rm558987/111204@oracle.fiap.com.br:1521/ORCL")
+        return connection
+    except Exception as e:
+        return f"Erro ao conectar ao banco de dados: {e}"
+
+def get_veiculo():
+    
+    connection = conecta_db()
+    cursor = connection.cursor()
+    
+    try:
+        sql = f"SELECT * FROM tbl_veiculos"
+        cursor.execute(sql)
+        
+        for linha in cursor:
+            print(linha)
+        
+    except Exception as e:
+        print(f"Erro ao consultar veículo: {e}")
+         
+    finally:
+        cursor.close()
+
+def insert_veiculo():
+    
+    connection = conecta_db()
+    
+    cursor = connection.cursor()
+    
+    chassi = input("Informe o chassi: ")
+    placa = input("Informe a placa: ")
+    cor = input("Informe a cor: ")
+    motor = input("Informe o motor: ")
+    marca = input("Informe a marca: ")
+    modelo = input("Informe o modelo: ")
+
+    try:
+        
+        sql = f"INSERT INTO tbl_veiculos VALUES ('{chassi}', '{placa}', '{cor}', '{motor}', '{marca}', '{modelo}')"
+        
+        cursor.execute(sql)
+        connection.commit()
+        print("Veículo inserido com sucesso!")
+        
+    except Exception as e:
+        print(f"Erro ao inserir veículo: {e}")
+    finally:
+        cursor.close()
+
 
 def erro_entrada(entrada, qtdAlternativas):
     try:
@@ -92,33 +148,18 @@ def funcionalidades(escolha):
     match escolha:
     # Funcionalidade 1 -> Adicionar veículo
         case 1:
-            chassi = input(f"\nInforme o chassi do veículo: ")
-            placa =  input(f"\nInforme a placa do veículo: ")
-
-            carros = (f"Fiat uno", "Ferrari", "Porsche", "Fiat toro", "Hyundai HB20",
-                    "Volkswagen Gol", "Nissan Versa")
-
-            print(f"Ok, seu {random.choice(carros)} foi Adicionado")
+            insert_veiculo()
 
         # Funcionalidades 2 e 3
         case 2:
-            carros_usuario = ("Ferrari", "Porshe")
-            carro_escolhido: str
-            print(f"Qual veículo você deseja selecionar?\n"
-                                +f"1 -> {carros_usuario[0]}\n"+
-                                f"2 -> {carros_usuario[1]}\n\n")
-            escolha_veiculo = entrada_valor_numerico()
+           
+           
+            get_veiculo()
 
-            escolha_veiculo = erro_entrada(escolha_veiculo, 2)
 
-            if escolha_veiculo == 1:
-                    carro_escolhido = carros_usuario[0]
-
-            elif escolha_veiculo == 2:
-                    carro_escolhido = carros_usuario[1]
-
-            print(f"Você selecionou o veículo {carro_escolhido}")
-
+            '''
+            DESENVOLVER MÉTODO PARA VISUALIZAR VEÍCULOS SEPARADAMENTE
+            '''
             print(f"Qual serviço você gostaria de acessar para seu veículo?\n"
                                 +f"1 -> Localizar veículo\n"
                                 +f"2 -> Inspecionar erros do veículo\n\n")
@@ -127,13 +168,15 @@ def funcionalidades(escolha):
 
             escolha = erro_entrada(escolha, 2)
             # Funcionalidade 2 -> Localizar veículo
+            resposta = random.randrange(1,  5)
             if escolha == 1:
-                if escolha_veiculo == 1:
-                    print(f"Seu veículo foi localizado em:\nBrasil - SP - Piraporinha - Bairro do limoeiro - Rua da Goiaba")
-                elif escolha_veiculo == 2:
-                    print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Capão redondo - Oficina de desmanche de veículos (clandestino)")
-                else:
-                     print(f"Escolha uma opção válida")
+                match resposta:
+                    case 1: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Vila Mariana - Rua Vergueiro")
+                    case 2: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Pinheiros - Avenida Faria Lima")
+                    case 3: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Moema - Rua Gaivota")
+                    case 4: print(f"Seu veículo foi localizado em:\nBrasil - SP - Santo André - Jardim Bela Vista - Rua Catequese")
+                    case 5: print(f"Seu veículo foi localizado em:\nBrasil - SP - Campinas - Cambuí - Rua Coronel Quirino")
+                    
 
             # Funcionalidade 3 -> Inspecionar erros do veículo
             elif escolha == 2:
@@ -191,6 +234,10 @@ def funcionalidades(escolha):
 
                  else:
                     print(f"O seu veiculo está perfeito\nSessão finalizada")
+
+
+# Principal
+conecta_db()
 
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
