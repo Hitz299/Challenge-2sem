@@ -1,6 +1,7 @@
 import time
 import random
 import oracledb
+import json
 import requests
 
 
@@ -12,8 +13,32 @@ import requests
 # Para casos em que o usuário terá que realizar uma escolha no menu interativo e o mesmo digitar uma
 # entrada inválida
 
-def exportar_json():
-    pass
+def exportar_json(cursor):
+    
+        sql = f"SELECT * FROM tbl_veiculos"
+        cursor.execute(sql)
+        
+        columns = [col[0] for col in cursor.description]
+
+        resultados = cursor.fetchall()
+
+
+        dic_veiculos = {col: [] for col in columns}
+
+        for row in resultados:
+            for col, value in zip(columns, row):
+                dic_veiculos[col].append(value)
+
+        consulta_json = json.dumps(dic_veiculos, sort_keys =True, indent=2)
+
+        with open ('consulta.json', 'w') as file:
+            file.write(consulta_json)
+
+        cursor.close()
+    
+   
+    
+
 
 def  conecta_db():
     try:
@@ -78,6 +103,7 @@ def get_veiculo():
     try:
         sql = f"SELECT * FROM tbl_veiculos"
         cursor.execute(sql)
+            
         
         for linha in cursor:
             print(linha)
@@ -92,12 +118,13 @@ def get_veiculo():
         escolha = erro_entrada(escolha, 2)
         
         if (escolha == 1):
-            exportar_json()
+            
+            exportar_json(cursor)
         
         else: 
             pass
+            cursor.close()
 
-        cursor.close()
 
 # Método POST do CRUD
 def insert_veiculo():
@@ -360,6 +387,7 @@ def funcionalidades(escolha):
 
 # Principal
 conecta_db()
+get_veiculo()
 
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
