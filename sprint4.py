@@ -4,6 +4,14 @@ import oracledb
 import json
 import requests
 
+'''
+Integrantes:
+
+NOME: Gabriel Yuji Suzuki	 			RM: 556588
+NOME: Gustavo de Aguiar Lima Silva	 	RM: 557707
+NOME: Nathan Magno Gustavo Consolo	RM: 558987
+'''
+
 
 # Foi importada a biblioteca "time" para permitir execução de códigos que envolvam manipulação
 # de tempo, como fazer o usuário esperar para realizar novas tentativas de login.
@@ -12,6 +20,8 @@ import requests
 
 # Para casos em que o usuário terá que realizar uma escolha no menu interativo e o mesmo digitar uma
 # entrada inválida
+
+
 
 def exportar_json(cursor):
     
@@ -390,12 +400,64 @@ def funcionalidades(escolha):
             escolha_funcionalidade()
 
 
+import requests
+
+def valida_cep(cep):
+    if len(cep) == 8 and cep.isdigit():
+        try:
+            url = f"https://viacep.com.br/ws/{cep}/json/"
+            response = requests.get(url)
+            response.raise_for_status() 
+            data = response.json()
+            
+            if "erro" in data:
+                print("CEP inválido. Tente novamente.")
+                return False
+            else:
+                return cep
+            
+        except requests.exceptions.RequestException as e:
+            print(f"Erro ao se comunicar com a API: {e}")
+            return False
+    else:
+        print("CEP inválido. Insira um CEP numérico com 8 dígitos.")
+        return False
+
+def viacep_api():
+    cep = entrada_valor()
+    cep = valida_cep(cep)
+
+    if cep:  
+        url = f"https://viacep.com.br/ws/{cep}/json/"
+        response = requests.get(url)
+        response.raise_for_status()
+        data = response.json()
+        return data
+    else:
+        return None 
+
+def exibir_endereco(data):
+    if data: 
+        print(f"\nuf: {data.get('uf', 'Não disponível')}")
+        print(f"logradouro: {data.get('logradouro', 'Não disponível')}")
+        print(f"bairro: {data.get('bairro', 'Não disponível')}")
+        print(f"localidade (cidade): {data.get('localidade', 'Não disponível')}")
+        print(f"região: {data.get('regiao', 'Não disponível')}")
+        print(f"ddd: {data.get('ddd', 'Não disponível')}\n")
+    else:
+        print("Não foi possível exibir o endereço.")
+
 
 
 # Principal
 
-print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
-              +"Informando seu E-mail: ")
+print(f"Vamos criar uma conta para você!\n Comece seu cadastro informando seu CEP")
+
+endereco_usuario = viacep_api()
+
+exibir_endereco(endereco_usuario)
+
+print(f"\nAgora, informe seu email")
 
 email_criar_conta = entrada_valor()
 email_criar_conta = valida_email(email_criar_conta)
