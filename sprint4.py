@@ -67,17 +67,21 @@ def get_veiculo_especifico():
         print(f"Erro ao consultar veículo: {e}")
         
     finally:
-        print(f"Você deseja editar este veículo?\n1 - Sim\t2 - Não")
+        print(f"\n\n1 - Editar veículo\t2 - Utilizar serviços\t3 - Voltar ao menu inicial")
         cursor.close()
         
         escolha = entrada_valor_numerico()
-        escolha = erro_entrada(escolha, 2)
+        escolha = erro_entrada(escolha, 3)
         
         if (escolha == 1):
             editar_veiculo(chassi)
         
-        else: 
-            menu()
+        elif (escolha == 2): 
+            servicos_veiculo()
+        
+        else:
+            pass
+        
         
          
     
@@ -93,6 +97,82 @@ def editar_veiculo(chassi):
         
     else: 
         delete_veiculo(chassi)
+
+def servicos_veiculo():
+            print(f"Qual serviço você gostaria de acessar para seu veículo?\n"
+                                +f"1 -> Localizar veículo\n"
+                                +f"2 -> Inspecionar erros do veículo\n")
+
+            escolha = entrada_valor_numerico()
+
+            escolha = erro_entrada(escolha, 2)
+            # Funcionalidade 2 -> Localizar veículo
+            resposta = random.randrange(1,  5)
+            if escolha == 1:
+                match resposta:
+                    case 1: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Vila Mariana - Rua Vergueiro")
+                    case 2: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Pinheiros - Avenida Faria Lima")
+                    case 3: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Moema - Rua Gaivota")
+                    case 4: print(f"Seu veículo foi localizado em:\nBrasil - SP - Santo André - Jardim Bela Vista - Rua Catequese")
+                    case 5: print(f"Seu veículo foi localizado em:\nBrasil - SP - Campinas - Cambuí - Rua Coronel Quirino")
+                    
+
+            # Funcionalidade 3 -> Inspecionar erros do veículo
+            elif escolha == 2:
+                 # lista dos possíveis erros que um usuário poderia ter
+                 erros = ["Nenhum", "embreagem", "correia", "cambio", "motor"]
+                 # variável para pegar itens (erros) aleatórios da lista de erros.
+                 # foi subtraído o valor 2 da lista para evitar que seja sorteado um
+                 # index inexistente na lista
+                 numerosErros = random.randint(0, len(erros) -2)
+                 # se o elemento "nenhum" entrar para o "numeroErros" de primeira, significa que
+                 # um possível erro já foi identificado, então o item "nenhum" será retirado da lista
+                 # e serão levados em consideração apenas os elementos restantes, que são os erros de fato
+                 if erros[numerosErros] != erros[0]:
+                    # retirando a possibilidade de "nenhum" erro
+                    erros.pop(0)
+                    # lista dos erros encontrados no veículo do usuário
+                    errosList = []
+                    # variável que servirá para guardar o endereço dos erros que serão
+                    # adicionados a "errosList" 
+                    errosIndex = 0
+                    # cada erro que for sorteado para "numerosErros" será adicionado a lista de erros
+                    for i in (range(numerosErros)):
+                        errosIndex = random.randint(0, numerosErros)
+                        errosList.append(erros[errosIndex])
+                        # Para evitar a repetição um mesmo erro
+                        erros.pop(errosIndex)
+                        numerosErros -= 1
+
+                    print(f"Foram encontrados problemas com os seguintes componentes"
+                          +f"de seu veículo:\n{errosList}")
+
+                    print(f"Deseja obter o valor do orçamento?\n"
+                                        "1 -> Sim\n2 -> Não\n")
+
+                    escolha = entrada_valor_numerico()
+
+                    escolha = erro_entrada(escolha, 2)
+
+                    if escolha == 1:
+                        valor_orcamento = 0.0
+                        if errosList.__contains__("embreagem"):
+                            valor_orcamento += 400.00
+                        if errosList.__contains__("correia"):
+                            valor_orcamento += 500.00
+                        if errosList.__contains__("cambio"):
+                            valor_orcamento += 3500.00
+                        if errosList.__contains__("motor"):
+                            valor_orcamento += 4000.00
+
+                        print(f"\n\nO orçamento para reparo completo do seu\n"
+                              +f"veículo ficou: {valor_orcamento: .2f}R$")
+
+                    elif escolha == 2:
+                        print(f"O usuário foi direcionado para a tela inicial")                
+
+                 else:
+                    print(f"O seu veiculo está perfeito\nSessão finalizada")
 
 # Para obter todos os veículos armazenados
 def get_veiculo():
@@ -309,85 +389,10 @@ def funcionalidades(escolha):
 
             escolha_funcionalidade()
 
-            print(f"Qual serviço você gostaria de acessar para seu veículo?\n"
-                                +f"1 -> Localizar veículo\n"
-                                +f"2 -> Inspecionar erros do veículo\n")
 
-            escolha = entrada_valor_numerico()
-
-            escolha = erro_entrada(escolha, 2)
-            # Funcionalidade 2 -> Localizar veículo
-            resposta = random.randrange(1,  5)
-            if escolha == 1:
-                match resposta:
-                    case 1: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Vila Mariana - Rua Vergueiro")
-                    case 2: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Pinheiros - Avenida Faria Lima")
-                    case 3: print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Moema - Rua Gaivota")
-                    case 4: print(f"Seu veículo foi localizado em:\nBrasil - SP - Santo André - Jardim Bela Vista - Rua Catequese")
-                    case 5: print(f"Seu veículo foi localizado em:\nBrasil - SP - Campinas - Cambuí - Rua Coronel Quirino")
-                    
-
-            # Funcionalidade 3 -> Inspecionar erros do veículo
-            elif escolha == 2:
-                 # lista dos possíveis erros que um usuário poderia ter
-                 erros = ["Nenhum", "embreagem", "correia", "cambio", "motor"]
-                 # variável para pegar itens (erros) aleatórios da lista de erros.
-                 # foi subtraído o valor 2 da lista para evitar que seja sorteado um
-                 # index inexistente na lista
-                 numerosErros = random.randint(0, len(erros) -2)
-                 # se o elemento "nenhum" entrar para o "numeroErros" de primeira, significa que
-                 # um possível erro já foi identificado, então o item "nenhum" será retirado da lista
-                 # e serão levados em consideração apenas os elementos restantes, que são os erros de fato
-                 if erros[numerosErros] != erros[0]:
-                    # retirando a possibilidade de "nenhum" erro
-                    erros.pop(0)
-                    # lista dos erros encontrados no veículo do usuário
-                    errosList = []
-                    # variável que servirá para guardar o endereço dos erros que serão
-                    # adicionados a "errosList" 
-                    errosIndex = 0
-                    # cada erro que for sorteado para "numerosErros" será adicionado a lista de erros
-                    for i in (range(numerosErros)):
-                        errosIndex = random.randint(0, numerosErros)
-                        errosList.append(erros[errosIndex])
-                        # Para evitar a repetição um mesmo erro
-                        erros.pop(errosIndex)
-                        numerosErros -= 1
-
-                    print(f"Foram encontrados problemas com os seguintes componentes"
-                          +f"de seu veículo:\n{errosList}")
-
-                    print(f"Deseja obter o valor do orçamento?\n"
-                                        "1 -> Sim\n2 -> Não\n")
-
-                    escolha = entrada_valor_numerico()
-
-                    escolha = erro_entrada(escolha, 2)
-
-                    if escolha == 1:
-                        valor_orcamento = 0.0
-                        if errosList.__contains__("embreagem"):
-                            valor_orcamento += 400.00
-                        if errosList.__contains__("correia"):
-                            valor_orcamento += 500.00
-                        if errosList.__contains__("cambio"):
-                            valor_orcamento += 3500.00
-                        if errosList.__contains__("motor"):
-                            valor_orcamento += 4000.00
-
-                        print(f"\n\nO orçamento para reparo completo do seu\n"
-                              +f"veículo ficou: {valor_orcamento: .2f}R$")
-
-                    elif escolha == 2:
-                        print(f"O usuário foi direcionado para a tela inicial")                
-
-                 else:
-                    print(f"O seu veiculo está perfeito\nSessão finalizada")
 
 
 # Principal
-conecta_db()
-get_veiculo()
 
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
